@@ -4,10 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us |     <header>
-        <h1>VAAKH AI</h1>
-        <p>Intelligent Systems</p>
-    </header></title>
+<title>About Us | VAAKH AI</title>
 <meta name="description" content="Discover VAAKH Technologies: inspired by Kashmiri poetess Lal Ded, connecting artificial intelligence, data science, pharmaceutical expertise and engineering to create meaningful human impact.">
 
 <style>
@@ -47,13 +44,33 @@ nav {
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
   color: var(--deep);
-  letter-spacing: 1px;
+  text-decoration: none;
+  line-height: 1;
 }
 
-.logo span { color: var(--purple); }
+.logo-main {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.05;
+  color: var(--deep);
+}
+
+.logo-sub {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.05;
+  margin-top: 1px;
+  color: var(--purple);
+}
 
 .navlinks {
   display: flex;
@@ -535,7 +552,10 @@ footer strong { color: white; }
 <!-- NAVIGATION -->
 
 <nav>
-  <a class="logo" href="index.html">VAAKH<span> Technologies</span></a>
+  <a class="logo" href="index.html" aria-label="VAAKH AI - Intelligent Systems">
+    <span class="logo-main">VAAKH AI</span>
+    <span class="logo-sub">Intelligent Systems</span>
+  </a>
 
   <div class="navlinks">
     <a href="about.html">About</a>
