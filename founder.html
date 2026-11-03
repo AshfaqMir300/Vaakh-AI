@@ -34,8 +34,14 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#vaakh-site a { text-decoration: none; color: inherit; }
-#vaakh-site a:hover { color: #A66B23; }
+#vaakh-site a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#vaakh-site a:hover {
+  color: #A66B23;
+}
 
 #vaakh-site .wrap {
   width: 100%;
@@ -45,23 +51,62 @@ html, body {
 }
 
 /* NAVIGATION */
+
 #vaakh-site .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding: 18px 0;
   gap: 20px;
   flex-wrap: wrap;
 }
 
+/* COMPANY BRANDING */
+
 #vaakh-site .logo {
-  font-size: 27px;
-  font-weight: 800;
-  letter-spacing: 4px;
-  color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  font-family: "Calibri Black", Calibri, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
-#vaakh-site .logo span { color: #B88BD9; }
+#vaakh-site .logo:hover {
+  color: #000000;
+}
+
+#vaakh-site .logo .company-name {
+  display: block;
+  font-family: "Calibri Black", Calibri, sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#vaakh-site .logo .logo-tagline {
+  display: block;
+  font-family: Calibri, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #7030A0;
+  line-height: 1.1;
+  text-align: left;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
 
 #vaakh-site .navlinks {
   display: flex;
@@ -73,9 +118,12 @@ html, body {
 }
 
 #vaakh-site .navlinks a:hover,
-#vaakh-site .navlinks a.active { color: #A66B23; }
+#vaakh-site .navlinks a.active {
+  color: #A66B23;
+}
 
 /* COMMON */
+
 #vaakh-site .eyebrow {
   color: #8056A3;
   letter-spacing: 3px;
@@ -84,7 +132,9 @@ html, body {
   font-weight: bold;
 }
 
-#vaakh-site .section { padding: 78px 0; }
+#vaakh-site .section {
+  padding: 78px 0;
+}
 
 #vaakh-site .section-title {
   font-size: clamp(29px, 4vw, 42px);
@@ -110,16 +160,21 @@ html, body {
   transition: background .2s ease, transform .2s ease;
 }
 
-#vaakh-site .btn:hover { transform: translateY(-2px); }
+#vaakh-site .btn:hover {
+  transform: translateY(-2px);
+}
 
 #vaakh-site .primary {
   background: #634283;
   color: white !important;
 }
 
-#vaakh-site .primary:hover { background: #39264F; }
+#vaakh-site .primary:hover {
+  background: #39264F;
+}
 
 /* HERO */
+
 #vaakh-site .hero {
   position: relative;
   background: linear-gradient(125deg, #E9DDF7, #DCC9F0 65%, #F6E7CB);
@@ -144,7 +199,9 @@ html, body {
   color: #302044;
 }
 
-#vaakh-site h1 span { color: #9567BA; }
+#vaakh-site h1 span {
+  color: #9567BA;
+}
 
 #vaakh-site .role {
   color: #634283;
@@ -162,6 +219,7 @@ html, body {
 }
 
 /* FOUNDER PHOTO */
+
 #vaakh-site .founder-photo {
   width: 340px;
   height: 340px;
@@ -185,6 +243,7 @@ html, body {
 }
 
 /* INTRODUCTION */
+
 #vaakh-site .intro-grid {
   display: grid;
   grid-template-columns: 1.2fr .8fr;
@@ -199,7 +258,9 @@ html, body {
   margin: 0 0 18px;
 }
 
-#vaakh-site .intro-copy strong { color: #51336F; }
+#vaakh-site .intro-copy strong {
+  color: #51336F;
+}
 
 #vaakh-site .quote {
   padding: 32px;
@@ -208,7 +269,9 @@ html, body {
   color: white;
 }
 
-#vaakh-site .quote .eyebrow { color: #F8D978; }
+#vaakh-site .quote .eyebrow {
+  color: #F8D978;
+}
 
 #vaakh-site .quote strong {
   display: block;
@@ -224,6 +287,7 @@ html, body {
 }
 
 /* LEADERSHIP IMPACT */
+
 #vaakh-site .impact-band {
   background: linear-gradient(120deg, #D7C1ED, #E9DDF7);
   border-top: 1px solid #D0B8E5;
@@ -258,6 +322,7 @@ html, body {
 }
 
 /* PROFESSIONAL JOURNEY */
+
 #vaakh-site .timeline {
   margin-top: 35px;
   display: grid;
@@ -295,6 +360,7 @@ html, body {
 }
 
 /* EXPERTISE */
+
 #vaakh-site .expertise-band {
   background: #F7F1FC;
   border-top: 1px solid #DCCBEA;
@@ -335,6 +401,7 @@ html, body {
 }
 
 /* EDUCATION & RECOGNITION */
+
 #vaakh-site .education {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -379,9 +446,12 @@ html, body {
   background: #F8F3FC;
 }
 
-#vaakh-site .academic-link:hover { background: #E9DDF7; }
+#vaakh-site .academic-link:hover {
+  background: #E9DDF7;
+}
 
 /* FOUNDER VISION */
+
 #vaakh-site .vision {
   text-align: center;
   padding: 85px 25px;
@@ -394,9 +464,12 @@ html, body {
   margin: 18px 0;
 }
 
-#vaakh-site .vision .sub { margin: 0 auto 28px; }
+#vaakh-site .vision .sub {
+  margin: 0 auto 28px;
+}
 
 /* FOOTER */
+
 #vaakh-site footer {
   background: #39264F;
   color: #E9DDF7;
@@ -404,7 +477,9 @@ html, body {
   font-size: 12px;
 }
 
-#vaakh-site footer a { color: #F7D978 !important; }
+#vaakh-site footer a {
+  color: #F7D978 !important;
+}
 
 #vaakh-site .footerrow {
   display: flex;
@@ -420,36 +495,63 @@ html, body {
 }
 
 /* TABLET */
+
 @media (max-width: 1000px) {
-  #vaakh-site .stats { grid-template-columns: repeat(3, 1fr); }
+  #vaakh-site .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 850px) {
   #vaakh-site .hero-grid,
-  #vaakh-site .intro-grid { grid-template-columns: 1fr; }
+  #vaakh-site .intro-grid {
+    grid-template-columns: 1fr;
+  }
 
   #vaakh-site .founder-photo {
     width: 310px;
     height: 310px;
   }
 
-  #vaakh-site .stats { grid-template-columns: repeat(2, 1fr); }
-  #vaakh-site .expertise-grid { grid-template-columns: repeat(2, 1fr); }
+  #vaakh-site .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #vaakh-site .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* MOBILE */
-@media (max-width: 650px) {
-  #vaakh-site .wrap { padding: 0 20px; }
 
-  #vaakh-site .nav { justify-content: center; }
+@media (max-width: 650px) {
+  #vaakh-site .wrap {
+    padding: 0 20px;
+  }
+
+  #vaakh-site .nav {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #vaakh-site .logo {
+    align-items: flex-start;
+    text-align: left;
+  }
 
   #vaakh-site .navlinks {
     justify-content: center;
     gap: 13px;
   }
 
-  #vaakh-site .hero { padding: 55px 0 65px; }
-  #vaakh-site .hero-grid { gap: 35px; }
+  #vaakh-site .hero {
+    padding: 55px 0 65px;
+  }
+
+  #vaakh-site .hero-grid {
+    gap: 35px;
+  }
 
   #vaakh-site .founder-photo {
     width: 270px;
@@ -459,12 +561,25 @@ html, body {
   #vaakh-site .timeline,
   #vaakh-site .education,
   #vaakh-site .expertise-grid,
-  #vaakh-site .stats { grid-template-columns: 1fr; }
+  #vaakh-site .stats {
+    grid-template-columns: 1fr;
+  }
 
-  #vaakh-site .stat { padding: 18px 12px; }
-  #vaakh-site .stat strong { font-size: 27px; }
-  #vaakh-site .section { padding: 58px 0; }
-  #vaakh-site .footerrow { flex-direction: column; }
+  #vaakh-site .stat {
+    padding: 18px 12px;
+  }
+
+  #vaakh-site .stat strong {
+    font-size: 27px;
+  }
+
+  #vaakh-site .section {
+    padding: 58px 0;
+  }
+
+  #vaakh-site .footerrow {
+    flex-direction: column;
+  }
 }
 </style>
 </head>
@@ -473,10 +588,17 @@ html, body {
 <div id="vaakh-site">
 
 <!-- NAVIGATION -->
+
 <div class="wrap">
 <nav class="nav">
-  <a class="logo" href="https://ashfaqmir300.github.io/vaakh-technologies/index.html">
-    VAAKH<span>.</span>
+
+  <a class="logo"
+     href="https://ashfaqmir300.github.io/vaakh-technologies/index.html"
+     aria-label="VAAKH AI - Intelligent Systems">
+
+    <span class="company-name">VAAKH AI</span>
+    <span class="logo-tagline">Intelligent Systems</span>
+
   </a>
 
   <div class="navlinks">
@@ -487,14 +609,18 @@ html, body {
     <a href="insights.html">Insights</a>
     <a href="contact.html">Contact</a>
   </div>
+
 </nav>
 </div>
 
 <!-- HERO -->
+
 <header class="hero">
 <div class="wrap hero-grid">
+
   <div>
     <div class="eyebrow">FOUNDER & LEADERSHIP</div>
+
     <h1>Dr. Ashfaq <span>Mir</span></h1>
 
     <div class="role">
@@ -524,14 +650,19 @@ html, body {
          alt="Dr. Ashfaq Mir, Founder of VAAKH Technologies"
          loading="eager">
   </div>
+
 </div>
 </header>
 
 <!-- BIOGRAPHY -->
+
 <section class="section">
 <div class="wrap intro-grid">
+
   <div class="intro-copy">
+
     <div class="eyebrow">ABOUT THE FOUNDER</div>
+
     <h2 class="section-title">
       Turning AI, Data and Scientific Complexity into Business Impact.
     </h2>
@@ -596,28 +727,37 @@ html, body {
       design for real-world adoption, and measure success by the
       value delivered.
     </p>
+
   </div>
 
   <div class="quote">
+
     <div class="eyebrow">A GUIDING PRINCIPLE</div>
+
     <strong>
       Think scientifically.<br>
       Engineer intelligently.<br>
       Transform responsibly.
     </strong>
+
     <p>
       The goal is not simply to implement AI. It is to help
       organisations transform how they work, make decisions,
       innovate and create value.
     </p>
+
   </div>
+
 </div>
 </section>
 
 <!-- LEADERSHIP IMPACT -->
+
 <section class="section impact-band">
 <div class="wrap">
+
   <div class="eyebrow">LEADERSHIP & IMPACT</div>
+
   <h2 class="section-title">Experience translated into outcomes.</h2>
 
   <p class="sub">
@@ -628,6 +768,7 @@ html, body {
   </p>
 
   <div class="stats">
+
     <div class="stat">
       <strong>15+</strong>
       <span>Years of professional experience</span>
@@ -652,14 +793,18 @@ html, body {
       <strong>€5M+</strong>
       <span>Business growth contribution through transformation initiatives</span>
     </div>
+
   </div>
 </div>
 </section>
 
 <!-- PROFESSIONAL JOURNEY -->
+
 <section class="section">
 <div class="wrap">
+
   <div class="eyebrow">PROFESSIONAL JOURNEY</div>
+
   <h2 class="section-title">From software development to enterprise AI.</h2>
 
   <p class="sub">
@@ -669,6 +814,7 @@ html, body {
   </p>
 
   <div class="timeline">
+
     <article class="timeline-card">
       <div class="tag">Enterprise AI & Translational Informatics</div>
       <h3>Bristol Myers Squibb</h3>
@@ -748,14 +894,18 @@ html, body {
         development and technology-led problem solving.
       </p>
     </article>
+
   </div>
 </div>
 </section>
 
 <!-- EXPERTISE -->
+
 <section class="section expertise-band">
 <div class="wrap">
+
   <div class="eyebrow">AREAS OF EXPERTISE</div>
+
   <h2 class="section-title">Where science meets enterprise technology.</h2>
 
   <p class="sub">
@@ -764,6 +914,7 @@ html, body {
   </p>
 
   <div class="expertise-grid">
+
     <article class="expertise-card">
       <div class="symbol">✳</div>
       <h3>Generative AI & Agentic AI</h3>
@@ -818,17 +969,22 @@ html, body {
         and executive advisory.
       </p>
     </article>
+
   </div>
 </div>
 </section>
 
 <!-- EDUCATION & RECOGNITION -->
+
 <section class="section">
 <div class="wrap">
+
   <div class="eyebrow">EDUCATION & RECOGNITION</div>
+
   <h2 class="section-title">Scientific foundations. Recognised delivery.</h2>
 
   <div class="education">
+
     <div class="education-card">
       <h3>Ph.D. in Data Science (Bioinformatics)</h3>
       <p>
@@ -862,9 +1018,11 @@ html, body {
         8+ peer-reviewed publications.
       </p>
     </div>
+
   </div>
 
   <div class="academic-links">
+
     <a class="academic-link"
        href="https://scholar.google.de/citations?user=9ODfC4YAAAAJ&hl=en&oi=ao"
        target="_blank"
@@ -878,14 +1036,18 @@ html, body {
        rel="noopener noreferrer">
       PUBMED PUBLICATIONS →
     </a>
+
   </div>
 </div>
 </section>
 
 <!-- FOUNDER VISION -->
+
 <section class="vision">
 <div class="wrap">
+
   <div class="eyebrow">THE VISION BEHIND VAAKH</div>
+
   <h2>Turning intelligence into impact.</h2>
 
   <p class="sub">
@@ -905,18 +1067,22 @@ html, body {
      href="https://ashfaqmir300.github.io/vaakh-technologies/contact.html">
     START A CONVERSATION →
   </a>
+
 </div>
 </section>
 
 <!-- FOOTER -->
+
 <footer>
 <div class="wrap">
+
   <div class="footerrow">
     <span>© 2026 VAAKH Technologies. All rights reserved.</span>
     <span>Munich, Germany | AI. Science. Transformation.</span>
   </div>
 
   <div class="footerrow" style="margin-top:14px">
+
     <span>Connecting expertise with innovation.</span>
 
     <div class="footerlinks">
@@ -929,6 +1095,7 @@ html, body {
          target="_blank"
          rel="noopener noreferrer">LinkedIn</a>
     </div>
+
   </div>
 </div>
 </footer>
