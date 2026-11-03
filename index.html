@@ -4,7 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>VAAKH Technologies | AI. Science. Transformation.</title>
+
 <meta name="description" content="VAAKH Technologies connects AI, data science and scientific expertise to deliver meaningful transformation across pharma, life sciences, healthcare and enterprise technology.">
 
 <style>
@@ -15,6 +17,7 @@ html,body {
   background:#E9DDF7!important;
   overflow-x:hidden;
 }
+
 * {box-sizing:border-box}
 
 #vaakh-site {
@@ -35,8 +38,14 @@ html,body {
   overflow:hidden;
 }
 
-#vaakh-site a {text-decoration:none;color:inherit}
-#vaakh-site a:hover {text-decoration:none}
+#vaakh-site a {
+  text-decoration:none;
+  color:inherit;
+}
+
+#vaakh-site a:hover {
+  text-decoration:none;
+}
 
 #vaakh-site .wrap {
   max-width:1160px;
@@ -45,22 +54,30 @@ html,body {
 }
 
 /* NAVIGATION */
+
 #vaakh-site .nav {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:25px 0;
+  padding:20px 0;
   gap:20px;
   flex-wrap:wrap;
 }
 
 #vaakh-site .logo {
-  font-size:27px;
-  font-weight:800;
-  letter-spacing:4px;
-  color:var(--purple);
+  display:inline-flex;
+  align-items:center;
+  flex-shrink:0;
 }
-#vaakh-site .logo span {color:#B88BD9}
+
+#vaakh-site .logo img {
+  display:block;
+  width:155px;
+  height:auto;
+  max-height:100px;
+  object-fit:contain;
+  border-radius:5px;
+}
 
 #vaakh-site .navlinks {
   display:flex;
@@ -70,12 +87,21 @@ html,body {
   color:var(--purple);
   font-weight:600;
 }
-#vaakh-site .navlinks a:hover {color:#A66B23}
+
+#vaakh-site .navlinks a:hover {
+  color:#A66B23;
+}
 
 /* HERO */
+
 #vaakh-site .hero {
   position:relative;
-  background:linear-gradient(125deg,#E9DDF7,#DCC9F0 65%,#F6E7CB);
+  background:linear-gradient(
+    125deg,
+    #E9DDF7,
+    #DCC9F0 65%,
+    #F6E7CB
+  );
   padding:90px 0 100px;
   overflow:hidden;
 }
@@ -102,7 +128,9 @@ html,body {
   color:#302044;
 }
 
-#vaakh-site h1 span {color:#9567BA}
+#vaakh-site h1 span {
+  color:#9567BA;
+}
 
 #vaakh-site .intro {
   color:#665574;
@@ -131,7 +159,10 @@ html,body {
   background:#634283;
   color:white!important;
 }
-#vaakh-site .primary:hover {background:#39264F}
+
+#vaakh-site .primary:hover {
+  background:#39264F;
+}
 
 #vaakh-site .secondary {
   border:1px solid #8C6BA9;
@@ -139,6 +170,7 @@ html,body {
 }
 
 /* SUNFLOWER ARTWORK */
+
 #vaakh-site .sunflower-art {
   position:absolute;
   width:370px;
@@ -159,17 +191,20 @@ html,body {
   stroke:#E7AC26;
   stroke-width:1.5;
 }
+
 #vaakh-site .center {
   fill:#71432C;
   stroke:#52301F;
   stroke-width:3;
 }
+
 #vaakh-site .stem {
   fill:none;
   stroke:#47845B;
   stroke-width:8;
   stroke-linecap:round;
 }
+
 #vaakh-site .leaf {
   fill:#65A66C;
   stroke:#39734A;
@@ -177,7 +212,10 @@ html,body {
 }
 
 /* GENERAL SECTIONS */
-#vaakh-site .section {padding:80px 0}
+
+#vaakh-site .section {
+  padding:80px 0;
+}
 
 #vaakh-site .section-title {
   font-size:clamp(29px,4vw,42px);
@@ -194,6 +232,7 @@ html,body {
 }
 
 /* SERVICES */
+
 #vaakh-site .grid {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
@@ -209,6 +248,7 @@ html,body {
   min-width:0;
   transition:.25s;
 }
+
 #vaakh-site .card:hover {
   border-color:#A77CC9;
   transform:translateY(-4px);
@@ -219,11 +259,13 @@ html,body {
   color:#9567BA;
   margin-bottom:18px;
 }
+
 #vaakh-site .card h3 {
   font-size:18px;
   margin:0 0 13px;
   color:#51336F;
 }
+
 #vaakh-site .card p {
   color:#746681;
   font-size:14px;
@@ -232,6 +274,7 @@ html,body {
 }
 
 /* INDUSTRIES */
+
 #vaakh-site .band {
   background:linear-gradient(120deg,#D7C1ED,#E9DDF7);
   border-top:1px solid #D0B8E5;
@@ -244,6 +287,7 @@ html,body {
   gap:13px;
   margin-top:28px;
 }
+
 #vaakh-site .pill {
   border:1px solid #B99BD4;
   border-radius:30px;
@@ -254,31 +298,39 @@ html,body {
 }
 
 /* ABOUT */
+
 #vaakh-site .about-grid {
   display:grid;
   grid-template-columns:1.1fr .9fr;
   gap:40px;
   align-items:center;
 }
+
 #vaakh-site .statement {
   padding:35px;
   border-radius:14px;
   background:linear-gradient(145deg,#634283,#8B68A8);
   color:white;
 }
-#vaakh-site .statement .eyebrow {color:#F8D978}
+
+#vaakh-site .statement .eyebrow {
+  color:#F8D978;
+}
+
 #vaakh-site .statement strong {
   display:block;
   font-size:23px;
   line-height:1.6;
   margin-top:18px;
 }
+
 #vaakh-site .statement p {
   color:#F0E7F7;
   line-height:1.8;
 }
 
 /* INSIGHTS */
+
 #vaakh-site .insights-band {
   background:#F7F1FC;
   border-top:1px solid #DCCBEA;
@@ -336,34 +388,43 @@ html,body {
 }
 
 /* CONTACT */
+
 #vaakh-site .contact {
   text-align:center;
   padding:85px 25px;
   background:linear-gradient(120deg,#D8C5EC,#F4E5CC);
 }
+
 #vaakh-site .contact h2 {
   font-size:clamp(30px,5vw,46px);
   color:#39264F;
   margin:18px 0;
 }
+
 #vaakh-site .contact .sub {
   margin:0 auto 30px;
 }
 
 /* FOOTER */
+
 #vaakh-site footer {
   background:#39264F;
   color:#E9DDF7;
   padding:30px 0;
   font-size:12px;
 }
-#vaakh-site footer a {color:#F7D978!important}
+
+#vaakh-site footer a {
+  color:#F7D978!important;
+}
+
 #vaakh-site .footerrow {
   display:flex;
   justify-content:space-between;
   gap:15px;
   flex-wrap:wrap;
 }
+
 #vaakh-site .footerlinks {
   display:flex;
   gap:18px;
@@ -371,67 +432,134 @@ html,body {
 }
 
 /* MOBILE */
+
 @media(max-width:900px) {
-  #vaakh-site .insight-grid {grid-template-columns:repeat(2,1fr)}
+  #vaakh-site .insight-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
 }
 
 @media(max-width:760px) {
-  #vaakh-site .wrap {padding:0 20px}
-  #vaakh-site .grid {grid-template-columns:1fr}
-  #vaakh-site .about-grid {grid-template-columns:1fr}
-  #vaakh-site .hero {padding:65px 0 80px}
-  #vaakh-site .navlinks {gap:13px}
+
+  #vaakh-site .wrap {
+    padding:0 20px;
+  }
+
+  #vaakh-site .grid {
+    grid-template-columns:1fr;
+  }
+
+  #vaakh-site .about-grid {
+    grid-template-columns:1fr;
+  }
+
+  #vaakh-site .hero {
+    padding:65px 0 80px;
+  }
+
+  #vaakh-site .navlinks {
+    gap:13px;
+  }
+
   #vaakh-site .sunflower-art {
     width:190px;
     height:250px;
     right:-35px;
     opacity:.45;
   }
-  #vaakh-site .hero-content {max-width:100%}
+
+  #vaakh-site .hero-content {
+    max-width:100%;
+  }
 }
 
 @media(max-width:520px) {
-  #vaakh-site .insight-grid {grid-template-columns:1fr}
-  #vaakh-site .nav {justify-content:center}
-  #vaakh-site .navlinks {justify-content:center}
+
+  #vaakh-site .insight-grid {
+    grid-template-columns:1fr;
+  }
+
+  #vaakh-site .nav {
+    justify-content:center;
+  }
+
+  #vaakh-site .navlinks {
+    justify-content:center;
+  }
+
+  #vaakh-site .logo img {
+    width:125px;
+  }
 }
+
 </style>
 </head>
 
 <body>
+
 <div id="vaakh-site">
 
+<!-- NAVIGATION -->
+
 <div class="wrap">
+
 <nav class="nav">
-  <a class="logo" href="https://ashfaqmir300.github.io/vaakh-technologies/index.html">
-    VAAKH<span>.</span>
+
+  <a class="logo"
+     href="https://ashfaqmir300.github.io/vaakh-technologies/index.html">
+
+    <img
+      src="VAAKH_logo.png"
+      alt="VAAKH Technologies - Giving Data a Voice. Giving Science a Purpose."
+    >
+
   </a>
 
-<div class="navlinks">
-<a href="about.html">About</a>
-<a href="founder.html">Founder</a>
-<a href="services.html">Services</a>
-<a href="industries.html">Industries</a>
-<a href="insights.html">Insights</a>
-<a href="contact.html">Contact</a>
-</div>
+  <div class="navlinks">
+    <a href="about.html">About</a>
+    <a href="founder.html">Founder</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a href="insights.html">Insights</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
 </nav>
+
 </div>
+
+<!-- HERO -->
 
 <header class="hero" id="vaakh-home">
 
 <div class="sunflower-art">
-<svg viewBox="0 0 370 470" xmlns="http://www.w3.org/2000/svg">
-<path class="stem" d="M185 155 C185 250 170 340 180 465"/>
-<path class="stem" d="M275 195 C270 285 240 370 230 465"/>
-<path class="stem" d="M90 205 C100 300 125 375 130 465"/>
 
-<path class="leaf" d="M177 310 C115 270 82 310 150 348 C169 350 178 330 177 310Z"/>
-<path class="leaf" d="M180 380 C230 340 270 367 206 410 C189 410 180 396 180 380Z"/>
-<path class="leaf" d="M246 325 C290 282 330 310 273 350 C256 350 247 340 246 325Z"/>
-<path class="leaf" d="M130 365 C80 330 55 358 113 393 C127 390 132 379 130 365Z"/>
+<svg viewBox="0 0 370 470"
+     xmlns="http://www.w3.org/2000/svg">
+
+<path class="stem"
+      d="M185 155 C185 250 170 340 180 465"/>
+
+<path class="stem"
+      d="M275 195 C270 285 240 370 230 465"/>
+
+<path class="stem"
+      d="M90 205 C100 300 125 375 130 465"/>
+
+<path class="leaf"
+      d="M177 310 C115 270 82 310 150 348 C169 350 178 330 177 310Z"/>
+
+<path class="leaf"
+      d="M180 380 C230 340 270 367 206 410 C189 410 180 396 180 380Z"/>
+
+<path class="leaf"
+      d="M246 325 C290 282 330 310 273 350 C256 350 247 340 246 325Z"/>
+
+<path class="leaf"
+      d="M130 365 C80 330 55 358 113 393 C127 390 132 379 130 365Z"/>
 
 <g transform="translate(185 115)">
+
   <ellipse class="petal" cy="-52" rx="19" ry="39"/>
   <ellipse class="petal" cy="-52" rx="19" ry="39" transform="rotate(30)"/>
   <ellipse class="petal" cy="-52" rx="19" ry="39" transform="rotate(60)"/>
@@ -444,14 +572,17 @@ html,body {
   <ellipse class="petal" cy="-52" rx="19" ry="39" transform="rotate(270)"/>
   <ellipse class="petal" cy="-52" rx="19" ry="39" transform="rotate(300)"/>
   <ellipse class="petal" cy="-52" rx="19" ry="39" transform="rotate(330)"/>
+
   <circle class="center" r="30"/>
   <circle fill="#D99C3D" r="22" stroke="none"/>
   <circle fill="#6A3D27" r="3" cx="-8" cy="-8"/>
   <circle fill="#6A3D27" r="3" cx="8" cy="5"/>
   <circle fill="#6A3D27" r="3" cx="-3" cy="12"/>
+
 </g>
 
 <g transform="translate(275 165) scale(.67)">
+
   <ellipse class="petal" cy="-48" rx="18" ry="36"/>
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(45)"/>
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(90)"/>
@@ -460,10 +591,13 @@ html,body {
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(225)"/>
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(270)"/>
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(315)"/>
+
   <circle class="center" r="28"/>
+
 </g>
 
 <g transform="translate(90 175) scale(.57)">
+
   <ellipse class="petal" cy="-48" rx="18" ry="36"/>
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(45)"/>
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(90)"/>
@@ -472,13 +606,20 @@ html,body {
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(225)"/>
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(270)"/>
   <ellipse class="petal" cy="-48" rx="18" ry="36" transform="rotate(315)"/>
+
   <circle class="center" r="28"/>
+
 </g>
+
 </svg>
+
 </div>
 
 <div class="wrap hero-content">
-  <div class="eyebrow">AI · DATA SCIENCE · SCIENTIFIC INNOVATION</div>
+
+  <div class="eyebrow">
+    AI · DATA SCIENCE · SCIENTIFIC INNOVATION
+  </div>
 
   <h1>
     Intelligence that<br>
@@ -493,20 +634,33 @@ html,body {
   </p>
 
   <div class="actions">
+
     <a class="btn primary" href="contact.html">
       LET'S INNOVATE TOGETHER →
     </a>
+
     <a class="btn secondary" href="services.html">
       EXPLORE OUR EXPERTISE
     </a>
+
   </div>
+
 </div>
+
 </header>
 
+<!-- SERVICES -->
+
 <section class="section" id="vaakh-services">
+
 <div class="wrap">
+
   <div class="eyebrow">WHAT WE DO</div>
-  <h2 class="section-title">Technology meets deep expertise.</h2>
+
+  <h2 class="section-title">
+    Technology meets deep expertise.
+  </h2>
+
   <p class="sub">
     From strategic vision to production-ready solutions,
     we help organisations turn complex data and emerging
@@ -514,64 +668,92 @@ html,body {
   </p>
 
   <div class="grid">
+
     <article class="card">
       <div class="symbol">✳</div>
       <h3>Artificial Intelligence</h3>
-      <p>Enterprise AI strategy, Generative AI, LLMs,
-      RAG systems, AI agents and intelligent automation.</p>
+      <p>
+        Enterprise AI strategy, Generative AI, LLMs,
+        RAG systems, AI agents and intelligent automation.
+      </p>
     </article>
 
     <article class="card">
       <div class="symbol">⌘</div>
       <h3>Data Science & Engineering</h3>
-      <p>Advanced analytics, cloud data platforms,
-      data architecture, machine learning and MLOps.</p>
+      <p>
+        Advanced analytics, cloud data platforms,
+        data architecture, machine learning and MLOps.
+      </p>
     </article>
 
     <article class="card">
       <div class="symbol">◎</div>
       <h3>Bioinformatics & Scientific AI</h3>
-      <p>Multi-omics, computational biology, biomarker discovery,
-      translational research and precision medicine.</p>
+      <p>
+        Multi-omics, computational biology, biomarker discovery,
+        translational research and precision medicine.
+      </p>
     </article>
 
     <article class="card">
       <div class="symbol">⌬</div>
       <h3>Pharma & Life Sciences</h3>
-      <p>Clinical data, RWE, digital pathology,
-      scientific informatics and research transformation.</p>
+      <p>
+        Clinical data, RWE, digital pathology,
+        scientific informatics and research transformation.
+      </p>
     </article>
 
     <article class="card">
       <div class="symbol">↗</div>
       <h3>Enterprise Transformation</h3>
-      <p>Technology roadmaps, operating models, AI adoption,
-      programme leadership and business transformation.</p>
+      <p>
+        Technology roadmaps, operating models, AI adoption,
+        programme leadership and business transformation.
+      </p>
     </article>
 
     <article class="card">
       <div class="symbol">◈</div>
       <h3>AI Strategy & Advisory</h3>
-      <p>AI readiness, opportunity assessment, governance,
-      responsible AI and fractional transformation leadership.</p>
+      <p>
+        AI readiness, opportunity assessment, governance,
+        responsible AI and fractional transformation leadership.
+      </p>
     </article>
+
   </div>
 
   <p style="margin-top:28px">
-    <a class="read-link" href="services.html">Explore all our services →</a>
+    <a class="read-link" href="services.html">
+      Explore all our services →
+    </a>
   </p>
+
 </div>
+
 </section>
 
+<!-- INDUSTRIES -->
+
 <section class="section band" id="vaakh-industries">
+
 <div class="wrap">
+
   <div class="eyebrow">INDUSTRIES WE EMPOWER</div>
-  <h2 class="section-title">Built for complex industries.</h2>
+
+  <h2 class="section-title">
+    Built for complex industries.
+  </h2>
+
   <p class="sub">
     We combine scientific understanding with enterprise
     technology to help organisations innovate with confidence.
   </p>
+
   <div class="industries">
+
     <span class="pill">Pharmaceuticals</span>
     <span class="pill">Biotechnology</span>
     <span class="pill">Life Sciences</span>
@@ -579,53 +761,88 @@ html,body {
     <span class="pill">Research & Development</span>
     <span class="pill">Enterprise Technology</span>
     <span class="pill">Engineering</span>
+
   </div>
+
   <p style="margin-top:28px">
-    <a class="read-link" href="industries.html">Discover our industry focus →</a>
+    <a class="read-link" href="industries.html">
+      Discover our industry focus →
+    </a>
   </p>
+
 </div>
+
 </section>
 
+<!-- ABOUT -->
+
 <section class="section" id="vaakh-about">
+
 <div class="wrap about-grid">
+
   <div>
+
     <div class="eyebrow">THE VAAKH APPROACH</div>
-    <h2 class="section-title">Beyond technology. Towards impact.</h2>
+
+    <h2 class="section-title">
+      Beyond technology. Towards impact.
+    </h2>
+
     <p class="sub">
       Real transformation requires more than algorithms and platforms.
       It requires scientific insight, engineering excellence,
       business understanding and the ability to deliver at scale.
     </p>
+
     <p class="sub" style="margin-top:15px">
       VAAKH Technologies connects these capabilities to help
       organisations move from ideas and experimentation to
       practical, sustainable outcomes.
     </p>
+
     <p style="margin-top:24px">
-      <a class="read-link" href="about.html">Discover VAAKH Technologies →</a>
+      <a class="read-link" href="about.html">
+        Discover VAAKH Technologies →
+      </a>
     </p>
+
   </div>
 
   <div class="statement">
+
     <div class="eyebrow">OUR PHILOSOPHY</div>
+
     <strong>
       Think scientifically.<br>
       Engineer intelligently.<br>
       Transform responsibly.
     </strong>
+
     <p>
       Turning data into knowledge, knowledge into intelligence,
       and intelligence into impact.
     </p>
+
   </div>
+
 </div>
+
 </section>
 
-<!-- INSIGHTS SECTION -->
+<!-- INSIGHTS -->
+
 <section class="section insights-band" id="vaakh-insights">
+
 <div class="wrap">
-  <div class="eyebrow">THOUGHT LEADERSHIP & INNOVATION</div>
-  <h2 class="section-title">Insights that move ideas forward.</h2>
+
+  <div class="eyebrow">
+    THOUGHT LEADERSHIP & INNOVATION
+  </div>
+
+  <h2 class="section-title">
+    Insights that move ideas forward.
+  </h2>
+
   <p class="sub">
     Explore perspectives on emerging technologies, scientific
     discovery and the practical application of AI and data
@@ -641,7 +858,9 @@ html,body {
         Exploring LLMs, intelligent agents, responsible AI
         and opportunities to create measurable business value.
       </p>
-      <a class="read-link" href="insights.html">Explore perspective →</a>
+      <a class="read-link" href="insights.html">
+        Explore perspective →
+      </a>
     </article>
 
     <article class="insight-card">
@@ -651,7 +870,9 @@ html,body {
         Connecting biological data, computational methods
         and scientific intelligence to support discovery.
       </p>
-      <a class="read-link" href="insights.html">Explore perspective →</a>
+      <a class="read-link" href="insights.html">
+        Explore perspective →
+      </a>
     </article>
 
     <article class="insight-card">
@@ -661,7 +882,9 @@ html,body {
         Building trusted data foundations, advanced analytics
         and scalable platforms for AI-enabled organisations.
       </p>
-      <a class="read-link" href="insights.html">Explore perspective →</a>
+      <a class="read-link" href="insights.html">
+        Explore perspective →
+      </a>
     </article>
 
     <article class="insight-card">
@@ -671,57 +894,102 @@ html,body {
         Exploring how AI, data and engineering can support
         research, diagnostics and scientific innovation.
       </p>
-      <a class="read-link" href="insights.html">Explore perspective →</a>
+      <a class="read-link" href="insights.html">
+        Explore perspective →
+      </a>
     </article>
 
   </div>
 
   <div class="insights-action">
-    <a class="btn primary" href="insights.html">EXPLORE ALL INSIGHTS →</a>
+    <a class="btn primary" href="insights.html">
+      EXPLORE ALL INSIGHTS →
+    </a>
   </div>
+
 </div>
+
 </section>
 
+<!-- CONTACT -->
+
 <section class="contact" id="vaakh-contact">
+
 <div class="wrap">
-  <div class="eyebrow">THE FUTURE STARTS WITH A CONVERSATION</div>
+
+  <div class="eyebrow">
+    THE FUTURE STARTS WITH A CONVERSATION
+  </div>
+
   <h2>Have a challenge worth solving?</h2>
+
   <p class="sub">
     Let's explore how AI, data and scientific innovation
     can create value for your organisation.
   </p>
+
   <a class="btn primary" href="contact.html">
     CONNECT WITH VAAKH →
   </a>
+
   <p style="margin-top:20px;font-size:14px;color:#665574">
     Or email us directly:
+
     <a href="mailto:ashfaqmir@gmail.com"
        style="font-weight:bold;color:#51336F">
       ashfaqmir@gmail.com
     </a>
   </p>
+
 </div>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
 <div class="wrap">
+
   <div class="footerrow">
-    <span>© 2026 VAAKH Technologies. All rights reserved.</span>
-    <span>Munich, Germany | AI. Science. Transformation.</span>
+
+    <span>
+      © 2026 VAAKH Technologies. All rights reserved.
+    </span>
+
+    <span>
+      Munich, Germany | AI. Science. Transformation.
+    </span>
+
   </div>
+
   <div class="footerrow" style="margin-top:14px">
-    <span>Connecting expertise with innovation.</span>
+
+    <span>
+      Connecting expertise with innovation.
+    </span>
+
     <div class="footerlinks">
+
       <a href="insights.html">Insights</a>
       <a href="contact.html">Contact</a>
       <a href="mailto:ashfaqmir@gmail.com">Email</a>
+
       <a href="https://www.linkedin.com/in/ashfaq-mir-ph-d-4530057/"
-         target="_blank" rel="noopener noreferrer">LinkedIn</a>
+         target="_blank"
+         rel="noopener noreferrer">
+        LinkedIn
+      </a>
+
     </div>
+
   </div>
+
 </div>
+
 </footer>
 
 </div>
+
 </body>
 </html>
