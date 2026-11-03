@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,485 +9,554 @@
 <meta name="description" content="Meet Dr. Ashfaq Mir, Founder of VAAKH Technologies — an AI, Data Science and Digital Transformation leader connecting AI, life sciences and enterprise innovation.">
 
 <style>
-html, body {
-  margin:0;
-  padding:0;
-  width:100%;
-  background:#E9DDF7;
-  overflow-x:hidden;
+* {
+  box-sizing: border-box;
 }
-* {box-sizing:border-box}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #E9DDF7;
+  overflow-x: hidden;
+}
 
 #vaakh-site {
-  --lavender:#E9DDF7;
-  --light:#F7F1FC;
-  --purple:#51336F;
-  --deep:#302044;
-  --gold:#F7C843;
-  --green:#47845B;
-  --muted:#746681;
+  --lavender: #E9DDF7;
+  --light: #F7F1FC;
+  --purple: #51336F;
+  --deep: #302044;
+  --gold: #F7C843;
+  --green: #47845B;
+  --muted: #746681;
 
-  width:100%;
-  background:var(--lavender);
-  color:var(--deep);
-  font-family:Arial,Helvetica,sans-serif;
+  width: 100%;
+  background: var(--lavender);
+  color: var(--deep);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #vaakh-site a {
-  text-decoration:none;
-  color:inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-#vaakh-site a:hover {color:#A66B23}
+#vaakh-site a:hover {
+  color: #A66B23;
+}
 
 #vaakh-site .wrap {
-  max-width:1160px;
-  margin:auto;
-  padding:0 30px;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 /* NAVIGATION */
+
 #vaakh-site .nav {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:25px 0;
-  gap:20px;
-  flex-wrap:wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 #vaakh-site .logo {
-  font-size:27px;
-  font-weight:800;
-  letter-spacing:4px;
-  color:var(--purple);
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: var(--purple);
 }
-#vaakh-site .logo span {color:#B88BD9}
+
+#vaakh-site .logo span {
+  color: #B88BD9;
+}
 
 #vaakh-site .navlinks {
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
-  font-size:13px;
-  color:var(--purple);
-  font-weight:600;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--purple);
+  font-weight: 600;
 }
 
 #vaakh-site .navlinks a:hover,
 #vaakh-site .navlinks a.active {
-  color:#A66B23;
+  color: #A66B23;
 }
 
 /* COMMON */
+
 #vaakh-site .eyebrow {
-  color:#8056A3;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  font-size:11px;
-  font-weight:bold;
+  color: #8056A3;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
 }
 
-#vaakh-site .section {padding:78px 0}
+#vaakh-site .section {
+  padding: 78px 0;
+}
 
 #vaakh-site .section-title {
-  font-size:clamp(29px,4vw,42px);
-  margin:14px 0;
-  color:#39264F;
-  letter-spacing:-1px;
+  font-size: clamp(29px, 4vw, 42px);
+  margin: 14px 0;
+  color: #39264F;
+  letter-spacing: -1px;
 }
 
 #vaakh-site .sub {
-  color:#746681;
-  line-height:1.85;
-  max-width:780px;
-  font-size:15px;
+  color: #746681;
+  line-height: 1.85;
+  max-width: 780px;
+  font-size: 15px;
 }
 
 #vaakh-site .btn {
-  display:inline-block;
-  padding:15px 24px;
-  border-radius:7px;
-  font-weight:bold;
-  font-size:12px;
-  letter-spacing:.5px;
+  display: inline-block;
+  padding: 15px 24px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: .5px;
+  transition: background .2s ease, transform .2s ease;
+}
+
+#vaakh-site .btn:hover {
+  transform: translateY(-2px);
 }
 
 #vaakh-site .primary {
-  background:#634283;
-  color:white!important;
+  background: #634283;
+  color: white !important;
 }
-#vaakh-site .primary:hover {background:#39264F}
+
+#vaakh-site .primary:hover {
+  background: #39264F;
+}
 
 /* HERO */
+
 #vaakh-site .hero {
-  position:relative;
-  background:linear-gradient(125deg,#E9DDF7,#DCC9F0 65%,#F6E7CB);
-  padding:78px 0 85px;
-  overflow:hidden;
+  position: relative;
+  background: linear-gradient(125deg, #E9DDF7, #DCC9F0 65%, #F6E7CB);
+  padding: 78px 0 85px;
+  overflow: hidden;
 }
 
 #vaakh-site .hero-grid {
-  display:grid;
-  grid-template-columns:1.35fr .65fr;
-  gap:55px;
-  align-items:center;
-  position:relative;
-  z-index:2;
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 55px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 #vaakh-site h1 {
-  font-size:clamp(40px,6vw,66px);
-  line-height:1.08;
-  letter-spacing:-2px;
-  margin:20px 0;
-  color:#302044;
+  font-size: clamp(40px, 6vw, 66px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  margin: 20px 0;
+  color: #302044;
 }
 
-#vaakh-site h1 span {color:#9567BA}
+#vaakh-site h1 span {
+  color: #9567BA;
+}
 
 #vaakh-site .role {
-  color:#634283;
-  font-weight:bold;
-  font-size:14px;
-  line-height:1.8;
-  max-width:680px;
+  color: #634283;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 680px;
 }
 
 #vaakh-site .hero-intro {
-  color:#665574;
-  font-size:16px;
-  line-height:1.9;
-  max-width:680px;
+  color: #665574;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 680px;
 }
 
-#vaakh-site .portrait-placeholder {
-  min-height:360px;
-  border:2px dashed #B99BD4;
-  border-radius:18px;
-  background:rgba(247,241,252,.65);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:25px;
-  color:#8056A3;
-}
+/* FOUNDER PHOTO */
 
-#vaakh-site .portrait-placeholder .initials {
-  width:125px;
-  height:125px;
-  border-radius:50%;
-  background:linear-gradient(145deg,#634283,#A989C4);
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:38px;
-  font-weight:bold;
-  margin-bottom:20px;
-}
-
-#vaakh-site .portrait-placeholder p {
-  font-size:12px;
-  line-height:1.7;
-  max-width:230px;
-}
-
-/* INTRO */
-#vaakh-site .intro-grid {
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:45px;
-  align-items:start;
-}
-
-#vaakh-site .intro-copy p {
-  color:#746681;
-  font-size:15px;
-  line-height:1.95;
-  margin:0 0 18px;
-}
-
-#vaakh-site .quote {
-  padding:32px;
-  border-radius:14px;
-  background:linear-gradient(145deg,#634283,#8B68A8);
-  color:white;
-}
-
-#vaakh-site .quote .eyebrow {color:#F8D978}
-#vaakh-site .quote strong {
-  display:block;
-  font-size:23px;
-  line-height:1.6;
-  margin-top:18px;
-}
-#vaakh-site .quote p {
-  color:#F0E7F7;
-  line-height:1.8;
-  font-size:14px;
-}
-
-/* IMPACT */
-#vaakh-site .impact-band {
-  background:linear-gradient(120deg,#D7C1ED,#E9DDF7);
-  border-top:1px solid #D0B8E5;
-  border-bottom:1px solid #D0B8E5;
-}
-
-#vaakh-site .stats {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-  margin-top:35px;
-}
-
-#vaakh-site .stat {
-  background:#F8F3FC;
-  border:1px solid #D5C1E8;
-  border-radius:13px;
-  padding:25px 18px;
-}
-
-#vaakh-site .stat strong {
-  display:block;
-  color:#8056A3;
-  font-size:34px;
-  margin-bottom:10px;
-}
-
-#vaakh-site .stat span {
-  color:#746681;
-  font-size:13px;
-  line-height:1.6;
-}
-
-/* JOURNEY */
-#vaakh-site .timeline {
-  margin-top:35px;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
-}
-
-#vaakh-site .timeline-card {
-  background:#F8F3FC;
-  border:1px solid #D5C1E8;
-  border-radius:13px;
-  padding:26px;
-}
-
-#vaakh-site .timeline-card h3 {
-  color:#51336F;
-  margin:0 0 10px;
-  font-size:18px;
-}
-
-#vaakh-site .timeline-card p {
-  color:#746681;
-  line-height:1.8;
-  font-size:14px;
-  margin:0;
-}
-
-#vaakh-site .timeline-card .tag {
-  color:#9567BA;
-  font-size:11px;
-  font-weight:bold;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  margin-bottom:12px;
-}
-
-/* EXPERTISE */
-#vaakh-site .expertise-band {
-  background:#F7F1FC;
-  border-top:1px solid #DCCBEA;
-  border-bottom:1px solid #DCCBEA;
-}
-
-#vaakh-site .expertise-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  margin-top:35px;
-}
-
-#vaakh-site .expertise-card {
-  padding:25px;
-  background:white;
-  border:1px solid #E3D7EF;
-  border-radius:13px;
-}
-
-#vaakh-site .expertise-card .symbol {
-  font-size:27px;
-  margin-bottom:15px;
-  color:#9567BA;
-}
-
-#vaakh-site .expertise-card h3 {
-  color:#51336F;
-  font-size:17px;
-  margin:0 0 12px;
-}
-
-#vaakh-site .expertise-card p {
-  color:#746681;
-  font-size:13px;
-  line-height:1.8;
-  margin:0;
-}
-
-/* EDUCATION */
-#vaakh-site .education {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:25px;
-  margin-top:30px;
-}
-
-#vaakh-site .education-card {
-  padding:28px;
-  border-left:4px solid #9567BA;
-  background:#F8F3FC;
-  border-radius:8px;
-}
-
-#vaakh-site .education-card h3 {
-  color:#51336F;
-  margin:0 0 10px;
-}
-
-#vaakh-site .education-card p {
-  color:#746681;
-  font-size:14px;
-  line-height:1.8;
-  margin:0;
-}
-
-/* ACADEMIC LINKS */
-#vaakh-site .academic-links {
-  display:flex;
-  gap:15px;
-  flex-wrap:wrap;
-  margin-top:25px;
-}
-
-#vaakh-site .academic-link {
-  display:inline-block;
-  border:1px solid #B99BD4;
-  padding:13px 18px;
-  border-radius:7px;
-  color:#634283!important;
-  font-size:13px;
-  font-weight:bold;
-  background:#F8F3FC;
-}
-
-/* VISION */
-#vaakh-site .vision {
-  text-align:center;
-  padding:85px 25px;
-  background:linear-gradient(120deg,#D8C5EC,#F4E5CC);
-}
-
-#vaakh-site .vision h2 {
-  font-size:clamp(30px,5vw,46px);
-  color:#39264F;
-  margin:18px 0;
-}
-
-#vaakh-site .vision .sub {
-  margin:0 auto 28px;
-}
-
-/* FOOTER */
-#vaakh-site footer {
-  background:#39264F;
-  color:#E9DDF7;
-  padding:30px 0;
-  font-size:12px;
-}
-
-#vaakh-site footer a {color:#F7D978!important}
-
-#vaakh-site .footerrow {
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-#vaakh-site .footerlinks {
-  display:flex;
-  gap:18px;
-  flex-wrap:wrap;
-}
-
-/* MOBILE */
-@media(max-width:850px) {
-  #vaakh-site .hero-grid,
-  #vaakh-site .intro-grid {
-    grid-template-columns:1fr;
-  }
-
-  #vaakh-site .portrait-placeholder {
-    min-height:250px;
-  }
-
-  #vaakh-site .stats {
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  #vaakh-site .expertise-grid {
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media(max-width:650px) {
-  #vaakh-site .wrap {padding:0 20px}
-  #vaakh-site .nav {justify-content:center}
-  #vaakh-site .navlinks {
-    justify-content:center;
-    gap:13px;
-  }
-  #vaakh-site .timeline,
-  #vaakh-site .education,
-  #vaakh-site .expertise-grid {
-    grid-template-columns:1fr;
-  }
-  #vaakh-site .stats {gap:10px}
-  #vaakh-site .stat {padding:18px 12px}
-  #vaakh-site .stat strong {font-size:27px}
-  #vaakh-site .hero {padding:55px 0 65px}
-}
-  #vaakh-site .founder-photo {
-  width:100%;
-  max-width:390px;
-  margin:auto;
+#vaakh-site .founder-photo {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #F7F1FC;
+  border: 5px solid #F7F1FC;
+  box-shadow: 0 12px 35px rgba(81, 51, 111, .18);
 }
 
 #vaakh-site .founder-photo img {
-  width:100%;
-  height:440px;
-  object-fit:cover;
-  object-position:center top;
-  border-radius:18px;
-  border:5px solid #F7F1FC;
-  box-shadow:0 12px 35px rgba(81,51,111,.18);
+  display: block;
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 14px;
+}
+
+/* INTRODUCTION */
+
+#vaakh-site .intro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 45px;
+  align-items: start;
+}
+
+#vaakh-site .intro-copy p {
+  color: #746681;
+  font-size: 15px;
+  line-height: 1.95;
+  margin: 0 0 18px;
+}
+
+#vaakh-site .quote {
+  padding: 32px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #634283, #8B68A8);
+  color: white;
+}
+
+#vaakh-site .quote .eyebrow {
+  color: #F8D978;
+}
+
+#vaakh-site .quote strong {
+  display: block;
+  font-size: 23px;
+  line-height: 1.6;
+  margin-top: 18px;
+}
+
+#vaakh-site .quote p {
+  color: #F0E7F7;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* LEADERSHIP IMPACT */
+
+#vaakh-site .impact-band {
+  background: linear-gradient(120deg, #D7C1ED, #E9DDF7);
+  border-top: 1px solid #D0B8E5;
+  border-bottom: 1px solid #D0B8E5;
+}
+
+#vaakh-site .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 35px;
+}
+
+#vaakh-site .stat {
+  background: #F8F3FC;
+  border: 1px solid #D5C1E8;
+  border-radius: 13px;
+  padding: 25px 18px;
+}
+
+#vaakh-site .stat strong {
+  display: block;
+  color: #8056A3;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+#vaakh-site .stat span {
+  color: #746681;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* PROFESSIONAL JOURNEY */
+
+#vaakh-site .timeline {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+#vaakh-site .timeline-card {
+  background: #F8F3FC;
+  border: 1px solid #D5C1E8;
+  border-radius: 13px;
+  padding: 26px;
+}
+
+#vaakh-site .timeline-card h3 {
+  color: #51336F;
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+#vaakh-site .timeline-card p {
+  color: #746681;
+  line-height: 1.8;
+  font-size: 14px;
+  margin: 0;
+}
+
+#vaakh-site .timeline-card .tag {
+  color: #9567BA;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* EXPERTISE */
+
+#vaakh-site .expertise-band {
+  background: #F7F1FC;
+  border-top: 1px solid #DCCBEA;
+  border-bottom: 1px solid #DCCBEA;
+}
+
+#vaakh-site .expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 35px;
+}
+
+#vaakh-site .expertise-card {
+  padding: 25px;
+  background: white;
+  border: 1px solid #E3D7EF;
+  border-radius: 13px;
+}
+
+#vaakh-site .expertise-card .symbol {
+  font-size: 27px;
+  margin-bottom: 15px;
+  color: #9567BA;
+}
+
+#vaakh-site .expertise-card h3 {
+  color: #51336F;
+  font-size: 17px;
+  margin: 0 0 12px;
+}
+
+#vaakh-site .expertise-card p {
+  color: #746681;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* EDUCATION */
+
+#vaakh-site .education {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+#vaakh-site .education-card {
+  padding: 28px;
+  border-left: 4px solid #9567BA;
+  background: #F8F3FC;
+  border-radius: 8px;
+}
+
+#vaakh-site .education-card h3 {
+  color: #51336F;
+  margin: 0 0 10px;
+}
+
+#vaakh-site .education-card p {
+  color: #746681;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ACADEMIC LINKS */
+
+#vaakh-site .academic-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+#vaakh-site .academic-link {
+  display: inline-block;
+  border: 1px solid #B99BD4;
+  padding: 13px 18px;
+  border-radius: 7px;
+  color: #634283 !important;
+  font-size: 13px;
+  font-weight: bold;
+  background: #F8F3FC;
+}
+
+#vaakh-site .academic-link:hover {
+  background: #E9DDF7;
+}
+
+/* FOUNDER VISION */
+
+#vaakh-site .vision {
+  text-align: center;
+  padding: 85px 25px;
+  background: linear-gradient(120deg, #D8C5EC, #F4E5CC);
+}
+
+#vaakh-site .vision h2 {
+  font-size: clamp(30px, 5vw, 46px);
+  color: #39264F;
+  margin: 18px 0;
+}
+
+#vaakh-site .vision .sub {
+  margin: 0 auto 28px;
+}
+
+/* FOOTER */
+
+#vaakh-site footer {
+  background: #39264F;
+  color: #E9DDF7;
+  padding: 30px 0;
+  font-size: 12px;
+}
+
+#vaakh-site footer a {
+  color: #F7D978 !important;
+}
+
+#vaakh-site .footerrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#vaakh-site .footerlinks {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  #vaakh-site .hero-grid,
+  #vaakh-site .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #vaakh-site .founder-photo {
+    max-width: 350px;
+  }
+
+  #vaakh-site .founder-photo img {
+    height: 420px;
+  }
+
+  #vaakh-site .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #vaakh-site .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  #vaakh-site .wrap {
+    padding: 0 20px;
+  }
+
+  #vaakh-site .nav {
+    justify-content: center;
+  }
+
+  #vaakh-site .navlinks {
+    justify-content: center;
+    gap: 13px;
+  }
+
+  #vaakh-site .hero {
+    padding: 55px 0 65px;
+  }
+
+  #vaakh-site .hero-grid {
+    gap: 35px;
+  }
+
+  #vaakh-site .founder-photo {
+    max-width: 310px;
+  }
+
+  #vaakh-site .founder-photo img {
+    height: 380px;
+  }
+
+  #vaakh-site .timeline,
+  #vaakh-site .education,
+  #vaakh-site .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #vaakh-site .stats {
+    gap: 10px;
+  }
+
+  #vaakh-site .stat {
+    padding: 18px 12px;
+  }
+
+  #vaakh-site .stat strong {
+    font-size: 27px;
+  }
+
+  #vaakh-site .section {
+    padding: 58px 0;
+  }
+
+  #vaakh-site .footerrow {
+    flex-direction: column;
+  }
 }
 </style>
 </head>
 
 <body>
+
 <div id="vaakh-site">
 
 <!-- NAVIGATION -->
+
 <div class="wrap">
 <nav class="nav">
-  <a class="logo" href="https://ashfaqmir300.github.io/vaakh-technologies/index.html">
+
+  <a class="logo"
+     href="https://ashfaqmir300.github.io/vaakh-technologies/index.html">
     VAAKH<span>.</span>
   </a>
 
@@ -500,10 +569,12 @@ html, body {
     <a href="https://ashfaqmir300.github.io/vaakh-technologies/insights.html">Insights</a>
     <a href="https://ashfaqmir300.github.io/vaakh-technologies/contact.html">Contact</a>
   </div>
+
 </nav>
 </div>
 
 <!-- HERO -->
+
 <header class="hero">
 <div class="wrap hero-grid">
 
@@ -526,28 +597,37 @@ html, body {
     <p>
       <a class="btn primary"
          href="https://www.linkedin.com/in/ashfaq-mir-ph-d-4530057/"
-         target="_blank" rel="noopener noreferrer">
+         target="_blank"
+         rel="noopener noreferrer">
         CONNECT ON LINKEDIN →
       </a>
     </p>
   </div>
 
-  <!-- Replace this placeholder with your professional photograph -->
-<div class="founder-photo">
-  <img src="images/ashfaq-mir.jpg"
-       alt="Dr. Ashfaq Mir, Founder of VAAKH Technologies">
-</div>
+  <!-- FOUNDER PHOTOGRAPH -->
+  <!-- Image file: Ashfaq-modified.png in the repository root -->
+
+  <div class="founder-photo">
+    <img
+      src="Ashfaq-modified.png"
+      alt="Dr. Ashfaq Mir, Founder of VAAKH Technologies"
+      loading="eager">
+  </div>
 
 </div>
 </header>
 
 <!-- BIOGRAPHY -->
+
 <section class="section">
 <div class="wrap intro-grid">
 
   <div class="intro-copy">
     <div class="eyebrow">ABOUT THE FOUNDER</div>
-    <h2 class="section-title">Science, technology and transformation.</h2>
+
+    <h2 class="section-title">
+      Science, technology and transformation.
+    </h2>
 
     <p>
       Dr. Ashfaq Mir is an AI, data science and digital
@@ -584,11 +664,13 @@ html, body {
 
   <div class="quote">
     <div class="eyebrow">A GUIDING PRINCIPLE</div>
+
     <strong>
       Think scientifically.<br>
       Engineer intelligently.<br>
       Transform responsibly.
     </strong>
+
     <p>
       Bringing scientific understanding, technology
       leadership and business thinking together to create
@@ -600,10 +682,15 @@ html, body {
 </section>
 
 <!-- LEADERSHIP IMPACT -->
+
 <section class="section impact-band">
 <div class="wrap">
+
   <div class="eyebrow">LEADERSHIP & IMPACT</div>
-  <h2 class="section-title">Experience translated into outcomes.</h2>
+
+  <h2 class="section-title">
+    Experience translated into outcomes.
+  </h2>
 
   <p class="sub">
     A track record of leading complex transformation programmes,
@@ -611,9 +698,10 @@ html, body {
   </p>
 
   <div class="stats">
+
     <div class="stat">
       <strong>20+</strong>
-      <span>Years of professional experience*</span>
+      <span>Years of professional experience</span>
     </div>
 
     <div class="stat">
@@ -630,19 +718,21 @@ html, body {
       <strong>€5M+</strong>
       <span>Business growth contribution through transformation initiatives</span>
     </div>
-  </div>
 
-  <p style="font-size:11px;color:#746681;margin-top:18px">
-    *Experience duration to be confirmed against the final public biography.
-  </p>
+  </div>
 </div>
 </section>
 
 <!-- PROFESSIONAL JOURNEY -->
+
 <section class="section">
 <div class="wrap">
+
   <div class="eyebrow">PROFESSIONAL JOURNEY</div>
-  <h2 class="section-title">From scientific research to enterprise AI.</h2>
+
+  <h2 class="section-title">
+    From scientific research to enterprise AI.
+  </h2>
 
   <p class="sub">
     A multidisciplinary career across scientific research,
@@ -715,10 +805,15 @@ html, body {
 </section>
 
 <!-- EXPERTISE -->
+
 <section class="section expertise-band">
 <div class="wrap">
+
   <div class="eyebrow">AREAS OF EXPERTISE</div>
-  <h2 class="section-title">Where science meets enterprise technology.</h2>
+
+  <h2 class="section-title">
+    Where science meets enterprise technology.
+  </h2>
 
   <p class="sub">
     A combination of scientific, technical and strategic
@@ -787,10 +882,15 @@ html, body {
 </section>
 
 <!-- EDUCATION & RECOGNITION -->
+
 <section class="section">
 <div class="wrap">
+
   <div class="eyebrow">EDUCATION & RECOGNITION</div>
-  <h2 class="section-title">Scientific foundations. Recognised delivery.</h2>
+
+  <h2 class="section-title">
+    Scientific foundations. Recognised delivery.
+  </h2>
 
   <div class="education">
 
@@ -819,24 +919,30 @@ html, body {
   </p>
 
   <div class="academic-links">
+
     <a class="academic-link"
        href="https://scholar.google.de/citations?user=9ODfC4YAAAAJ&hl=en&oi=ao"
-       target="_blank" rel="noopener noreferrer">
+       target="_blank"
+       rel="noopener noreferrer">
       GOOGLE SCHOLAR →
     </a>
 
     <a class="academic-link"
        href="https://pubmed.ncbi.nlm.nih.gov/?term=Ashfaq+Mir"
-       target="_blank" rel="noopener noreferrer">
+       target="_blank"
+       rel="noopener noreferrer">
       PUBMED PUBLICATIONS →
     </a>
+
   </div>
 </div>
 </section>
 
 <!-- FOUNDER VISION -->
+
 <section class="vision">
 <div class="wrap">
+
   <div class="eyebrow">THE VISION BEHIND VAAKH</div>
 
   <h2>Turning intelligence into impact.</h2>
@@ -857,10 +963,12 @@ html, body {
      href="https://ashfaqmir300.github.io/vaakh-technologies/contact.html">
     START A CONVERSATION →
   </a>
+
 </div>
 </section>
 
 <!-- FOOTER -->
+
 <footer>
 <div class="wrap">
 
@@ -870,6 +978,7 @@ html, body {
   </div>
 
   <div class="footerrow" style="margin-top:14px">
+
     <span>Connecting expertise with innovation.</span>
 
     <div class="footerlinks">
@@ -879,13 +988,15 @@ html, body {
       <a href="https://ashfaqmir300.github.io/vaakh-technologies/contact.html">Contact</a>
       <a href="mailto:ashfaqmir@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/ashfaq-mir-ph-d-4530057/"
-         target="_blank" rel="noopener noreferrer">LinkedIn</a>
+         target="_blank"
+         rel="noopener noreferrer">LinkedIn</a>
     </div>
-  </div>
 
+  </div>
 </div>
 </footer>
 
 </div>
 </body>
 </html>
+```
