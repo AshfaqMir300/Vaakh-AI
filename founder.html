@@ -1,0 +1,880 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Founder | Dr. Ashfaq Mir | VAAKH Technologies</title>
+<meta name="description" content="Meet Dr. Ashfaq Mir, Founder of VAAKH Technologies — an AI, Data Science and Digital Transformation leader connecting AI, life sciences and enterprise innovation.">
+
+<style>
+html, body {
+  margin:0;
+  padding:0;
+  width:100%;
+  background:#E9DDF7;
+  overflow-x:hidden;
+}
+* {box-sizing:border-box}
+
+#vaakh-site {
+  --lavender:#E9DDF7;
+  --light:#F7F1FC;
+  --purple:#51336F;
+  --deep:#302044;
+  --gold:#F7C843;
+  --green:#47845B;
+  --muted:#746681;
+
+  width:100%;
+  background:var(--lavender);
+  color:var(--deep);
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+#vaakh-site a {
+  text-decoration:none;
+  color:inherit;
+}
+
+#vaakh-site a:hover {color:#A66B23}
+
+#vaakh-site .wrap {
+  max-width:1160px;
+  margin:auto;
+  padding:0 30px;
+}
+
+/* NAVIGATION */
+#vaakh-site .nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 0;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+#vaakh-site .logo {
+  font-size:27px;
+  font-weight:800;
+  letter-spacing:4px;
+  color:var(--purple);
+}
+#vaakh-site .logo span {color:#B88BD9}
+
+#vaakh-site .navlinks {
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  font-size:13px;
+  color:var(--purple);
+  font-weight:600;
+}
+
+#vaakh-site .navlinks a:hover,
+#vaakh-site .navlinks a.active {
+  color:#A66B23;
+}
+
+/* COMMON */
+#vaakh-site .eyebrow {
+  color:#8056A3;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-size:11px;
+  font-weight:bold;
+}
+
+#vaakh-site .section {padding:78px 0}
+
+#vaakh-site .section-title {
+  font-size:clamp(29px,4vw,42px);
+  margin:14px 0;
+  color:#39264F;
+  letter-spacing:-1px;
+}
+
+#vaakh-site .sub {
+  color:#746681;
+  line-height:1.85;
+  max-width:780px;
+  font-size:15px;
+}
+
+#vaakh-site .btn {
+  display:inline-block;
+  padding:15px 24px;
+  border-radius:7px;
+  font-weight:bold;
+  font-size:12px;
+  letter-spacing:.5px;
+}
+
+#vaakh-site .primary {
+  background:#634283;
+  color:white!important;
+}
+#vaakh-site .primary:hover {background:#39264F}
+
+/* HERO */
+#vaakh-site .hero {
+  position:relative;
+  background:linear-gradient(125deg,#E9DDF7,#DCC9F0 65%,#F6E7CB);
+  padding:78px 0 85px;
+  overflow:hidden;
+}
+
+#vaakh-site .hero-grid {
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  gap:55px;
+  align-items:center;
+  position:relative;
+  z-index:2;
+}
+
+#vaakh-site h1 {
+  font-size:clamp(40px,6vw,66px);
+  line-height:1.08;
+  letter-spacing:-2px;
+  margin:20px 0;
+  color:#302044;
+}
+
+#vaakh-site h1 span {color:#9567BA}
+
+#vaakh-site .role {
+  color:#634283;
+  font-weight:bold;
+  font-size:14px;
+  line-height:1.8;
+  max-width:680px;
+}
+
+#vaakh-site .hero-intro {
+  color:#665574;
+  font-size:16px;
+  line-height:1.9;
+  max-width:680px;
+}
+
+#vaakh-site .portrait-placeholder {
+  min-height:360px;
+  border:2px dashed #B99BD4;
+  border-radius:18px;
+  background:rgba(247,241,252,.65);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:25px;
+  color:#8056A3;
+}
+
+#vaakh-site .portrait-placeholder .initials {
+  width:125px;
+  height:125px;
+  border-radius:50%;
+  background:linear-gradient(145deg,#634283,#A989C4);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:38px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+#vaakh-site .portrait-placeholder p {
+  font-size:12px;
+  line-height:1.7;
+  max-width:230px;
+}
+
+/* INTRO */
+#vaakh-site .intro-grid {
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:45px;
+  align-items:start;
+}
+
+#vaakh-site .intro-copy p {
+  color:#746681;
+  font-size:15px;
+  line-height:1.95;
+  margin:0 0 18px;
+}
+
+#vaakh-site .quote {
+  padding:32px;
+  border-radius:14px;
+  background:linear-gradient(145deg,#634283,#8B68A8);
+  color:white;
+}
+
+#vaakh-site .quote .eyebrow {color:#F8D978}
+#vaakh-site .quote strong {
+  display:block;
+  font-size:23px;
+  line-height:1.6;
+  margin-top:18px;
+}
+#vaakh-site .quote p {
+  color:#F0E7F7;
+  line-height:1.8;
+  font-size:14px;
+}
+
+/* IMPACT */
+#vaakh-site .impact-band {
+  background:linear-gradient(120deg,#D7C1ED,#E9DDF7);
+  border-top:1px solid #D0B8E5;
+  border-bottom:1px solid #D0B8E5;
+}
+
+#vaakh-site .stats {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-top:35px;
+}
+
+#vaakh-site .stat {
+  background:#F8F3FC;
+  border:1px solid #D5C1E8;
+  border-radius:13px;
+  padding:25px 18px;
+}
+
+#vaakh-site .stat strong {
+  display:block;
+  color:#8056A3;
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+#vaakh-site .stat span {
+  color:#746681;
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* JOURNEY */
+#vaakh-site .timeline {
+  margin-top:35px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+#vaakh-site .timeline-card {
+  background:#F8F3FC;
+  border:1px solid #D5C1E8;
+  border-radius:13px;
+  padding:26px;
+}
+
+#vaakh-site .timeline-card h3 {
+  color:#51336F;
+  margin:0 0 10px;
+  font-size:18px;
+}
+
+#vaakh-site .timeline-card p {
+  color:#746681;
+  line-height:1.8;
+  font-size:14px;
+  margin:0;
+}
+
+#vaakh-site .timeline-card .tag {
+  color:#9567BA;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+/* EXPERTISE */
+#vaakh-site .expertise-band {
+  background:#F7F1FC;
+  border-top:1px solid #DCCBEA;
+  border-bottom:1px solid #DCCBEA;
+}
+
+#vaakh-site .expertise-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:35px;
+}
+
+#vaakh-site .expertise-card {
+  padding:25px;
+  background:white;
+  border:1px solid #E3D7EF;
+  border-radius:13px;
+}
+
+#vaakh-site .expertise-card .symbol {
+  font-size:27px;
+  margin-bottom:15px;
+  color:#9567BA;
+}
+
+#vaakh-site .expertise-card h3 {
+  color:#51336F;
+  font-size:17px;
+  margin:0 0 12px;
+}
+
+#vaakh-site .expertise-card p {
+  color:#746681;
+  font-size:13px;
+  line-height:1.8;
+  margin:0;
+}
+
+/* EDUCATION */
+#vaakh-site .education {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  margin-top:30px;
+}
+
+#vaakh-site .education-card {
+  padding:28px;
+  border-left:4px solid #9567BA;
+  background:#F8F3FC;
+  border-radius:8px;
+}
+
+#vaakh-site .education-card h3 {
+  color:#51336F;
+  margin:0 0 10px;
+}
+
+#vaakh-site .education-card p {
+  color:#746681;
+  font-size:14px;
+  line-height:1.8;
+  margin:0;
+}
+
+/* ACADEMIC LINKS */
+#vaakh-site .academic-links {
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+
+#vaakh-site .academic-link {
+  display:inline-block;
+  border:1px solid #B99BD4;
+  padding:13px 18px;
+  border-radius:7px;
+  color:#634283!important;
+  font-size:13px;
+  font-weight:bold;
+  background:#F8F3FC;
+}
+
+/* VISION */
+#vaakh-site .vision {
+  text-align:center;
+  padding:85px 25px;
+  background:linear-gradient(120deg,#D8C5EC,#F4E5CC);
+}
+
+#vaakh-site .vision h2 {
+  font-size:clamp(30px,5vw,46px);
+  color:#39264F;
+  margin:18px 0;
+}
+
+#vaakh-site .vision .sub {
+  margin:0 auto 28px;
+}
+
+/* FOOTER */
+#vaakh-site footer {
+  background:#39264F;
+  color:#E9DDF7;
+  padding:30px 0;
+  font-size:12px;
+}
+
+#vaakh-site footer a {color:#F7D978!important}
+
+#vaakh-site .footerrow {
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+#vaakh-site .footerlinks {
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+/* MOBILE */
+@media(max-width:850px) {
+  #vaakh-site .hero-grid,
+  #vaakh-site .intro-grid {
+    grid-template-columns:1fr;
+  }
+
+  #vaakh-site .portrait-placeholder {
+    min-height:250px;
+  }
+
+  #vaakh-site .stats {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  #vaakh-site .expertise-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:650px) {
+  #vaakh-site .wrap {padding:0 20px}
+  #vaakh-site .nav {justify-content:center}
+  #vaakh-site .navlinks {
+    justify-content:center;
+    gap:13px;
+  }
+  #vaakh-site .timeline,
+  #vaakh-site .education,
+  #vaakh-site .expertise-grid {
+    grid-template-columns:1fr;
+  }
+  #vaakh-site .stats {gap:10px}
+  #vaakh-site .stat {padding:18px 12px}
+  #vaakh-site .stat strong {font-size:27px}
+  #vaakh-site .hero {padding:55px 0 65px}
+}
+</style>
+</head>
+
+<body>
+<div id="vaakh-site">
+
+<!-- NAVIGATION -->
+<div class="wrap">
+<nav class="nav">
+  <a class="logo" href="https://ashfaqmir300.github.io/vaakh-technologies/index.html">
+    VAAKH<span>.</span>
+  </a>
+
+  <div class="navlinks">
+    <a href="https://ashfaqmir300.github.io/vaakh-technologies/index.html">Home</a>
+    <a href="https://ashfaqmir300.github.io/vaakh-technologies/services.html">Services</a>
+    <a href="https://ashfaqmir300.github.io/vaakh-technologies/industries.html">Industries</a>
+    <a href="https://ashfaqmir300.github.io/vaakh-technologies/about.html">About</a>
+    <a class="active" href="https://ashfaqmir300.github.io/vaakh-technologies/founder.html">Founder</a>
+    <a href="https://ashfaqmir300.github.io/vaakh-technologies/insights.html">Insights</a>
+    <a href="https://ashfaqmir300.github.io/vaakh-technologies/contact.html">Contact</a>
+  </div>
+</nav>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+<div class="wrap hero-grid">
+
+  <div>
+    <div class="eyebrow">FOUNDER & LEADERSHIP</div>
+
+    <h1>Dr. Ashfaq <span>Mir</span></h1>
+
+    <div class="role">
+      Founder, VAAKH Technologies<br>
+      AI, Data & Digital Transformation Leader
+    </div>
+
+    <p class="hero-intro">
+      Connecting Artificial Intelligence, scientific innovation
+      and enterprise technology to help organisations turn
+      complex challenges into meaningful outcomes.
+    </p>
+
+    <p>
+      <a class="btn primary"
+         href="https://www.linkedin.com/in/ashfaq-mir-ph-d-4530057/"
+         target="_blank" rel="noopener noreferrer">
+        CONNECT ON LINKEDIN →
+      </a>
+    </p>
+  </div>
+
+  <!-- Replace this placeholder with your professional photograph -->
+  <div class="portrait-placeholder">
+    <div class="initials">AM</div>
+    <strong>Dr. Ashfaq Mir, Ph.D.</strong>
+    <p>
+      Founder, VAAKH Technologies<br>
+      Replace this area with your professional photograph.
+    </p>
+  </div>
+
+</div>
+</header>
+
+<!-- BIOGRAPHY -->
+<section class="section">
+<div class="wrap intro-grid">
+
+  <div class="intro-copy">
+    <div class="eyebrow">ABOUT THE FOUNDER</div>
+    <h2 class="section-title">Science, technology and transformation.</h2>
+
+    <p>
+      Dr. Ashfaq Mir is an AI, data science and digital
+      transformation leader with a Ph.D. in Data Science
+      (Bioinformatics) and more than 20 years of professional
+      experience spanning pharmaceutical, biotechnology,
+      healthcare, research and global consulting environments.
+    </p>
+
+    <p>
+      He combines enterprise transformation leadership with
+      deep technical expertise across Generative AI, large
+      language models (LLMs), retrieval-augmented generation
+      (RAG), machine learning, data engineering, cloud platforms
+      and MLOps.
+    </p>
+
+    <p>
+      His experience spans the full transformation lifecycle:
+      identifying high-value opportunities, defining strategy,
+      shaping technology architectures, developing solutions,
+      implementing platforms and driving adoption across
+      complex global organisations.
+    </p>
+
+    <p>
+      His distinctive expertise lies at the intersection of
+      AI, life sciences and enterprise business transformation.
+      He connects scientific and clinical needs with data
+      platforms, AI capabilities, regulatory considerations
+      and business priorities.
+    </p>
+  </div>
+
+  <div class="quote">
+    <div class="eyebrow">A GUIDING PRINCIPLE</div>
+    <strong>
+      Think scientifically.<br>
+      Engineer intelligently.<br>
+      Transform responsibly.
+    </strong>
+    <p>
+      Bringing scientific understanding, technology
+      leadership and business thinking together to create
+      solutions with lasting value.
+    </p>
+  </div>
+
+</div>
+</section>
+
+<!-- LEADERSHIP IMPACT -->
+<section class="section impact-band">
+<div class="wrap">
+  <div class="eyebrow">LEADERSHIP & IMPACT</div>
+  <h2 class="section-title">Experience translated into outcomes.</h2>
+
+  <p class="sub">
+    A track record of leading complex transformation programmes,
+    building global teams and connecting innovation with business value.
+  </p>
+
+  <div class="stats">
+    <div class="stat">
+      <strong>20+</strong>
+      <span>Years of professional experience*</span>
+    </div>
+
+    <div class="stat">
+      <strong>€6M+</strong>
+      <span>Enterprise transformation portfolio experience</span>
+    </div>
+
+    <div class="stat">
+      <strong>50+</strong>
+      <span>Global professionals led across multidisciplinary teams</span>
+    </div>
+
+    <div class="stat">
+      <strong>€5M+</strong>
+      <span>Business growth contribution through transformation initiatives</span>
+    </div>
+  </div>
+
+  <p style="font-size:11px;color:#746681;margin-top:18px">
+    *Experience duration to be confirmed against the final public biography.
+  </p>
+</div>
+</section>
+
+<!-- PROFESSIONAL JOURNEY -->
+<section class="section">
+<div class="wrap">
+  <div class="eyebrow">PROFESSIONAL JOURNEY</div>
+  <h2 class="section-title">From scientific research to enterprise AI.</h2>
+
+  <p class="sub">
+    A multidisciplinary career across scientific research,
+    pharmaceutical innovation, diagnostics, consulting
+    and enterprise technology leadership.
+  </p>
+
+  <div class="timeline">
+
+    <article class="timeline-card">
+      <div class="tag">Enterprise AI & Translational Informatics</div>
+      <h3>Bristol Myers Squibb</h3>
+      <p>
+        Leadership across AI, bioinformatics and translational
+        informatics initiatives supporting biomarker discovery,
+        oncology and precision medicine.
+      </p>
+    </article>
+
+    <article class="timeline-card">
+      <div class="tag">AI & Life Sciences Consulting</div>
+      <h3>Accenture</h3>
+      <p>
+        Led enterprise Generative AI and scientific informatics
+        transformation initiatives, including AI-enabled
+        knowledge management and regulatory workflows.
+      </p>
+    </article>
+
+    <article class="timeline-card">
+      <div class="tag">Scientific Data & Transformation</div>
+      <h3>Boehringer Ingelheim</h3>
+      <p>
+        Led the BIDataLand transformation programme,
+        connecting research, clinical and translational
+        data capabilities and leading global multidisciplinary teams.
+      </p>
+    </article>
+
+    <article class="timeline-card">
+      <div class="tag">Diagnostics & Precision Medicine</div>
+      <h3>Roche Diagnostics / Bio-Techne</h3>
+      <p>
+        Contributed to advanced diagnostics, biomarker discovery,
+        clinical analytics and translational science initiatives.
+      </p>
+    </article>
+
+    <article class="timeline-card">
+      <div class="tag">Scientific Research</div>
+      <h3>Helmholtz Zentrum München</h3>
+      <p>
+        Conducted multi-omics and computational research,
+        applying machine learning and statistical modelling
+        to biological and clinical datasets.
+      </p>
+    </article>
+
+    <article class="timeline-card">
+      <div class="tag">Early Career</div>
+      <h3>INSERM & Bioinformatics Technology</h3>
+      <p>
+        Built foundations in bioinformatics, data analysis,
+        scientific software development and computational workflows.
+      </p>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="section expertise-band">
+<div class="wrap">
+  <div class="eyebrow">AREAS OF EXPERTISE</div>
+  <h2 class="section-title">Where science meets enterprise technology.</h2>
+
+  <p class="sub">
+    A combination of scientific, technical and strategic
+    capabilities across the modern digital transformation landscape.
+  </p>
+
+  <div class="expertise-grid">
+
+    <article class="expertise-card">
+      <div class="symbol">✳</div>
+      <h3>Generative AI & Agentic AI</h3>
+      <p>
+        LLMs, RAG, AI agents, intelligent automation,
+        AI strategy and responsible AI adoption.
+      </p>
+    </article>
+
+    <article class="expertise-card">
+      <div class="symbol">⌘</div>
+      <h3>Data Science & Engineering</h3>
+      <p>
+        Machine learning, advanced analytics, cloud data
+        platforms, data architecture and MLOps.
+      </p>
+    </article>
+
+    <article class="expertise-card">
+      <div class="symbol">◎</div>
+      <h3>Bioinformatics & Multi-Omics</h3>
+      <p>
+        Computational biology, genomics, transcriptomics,
+        epigenomics and biomarker discovery.
+      </p>
+    </article>
+
+    <article class="expertise-card">
+      <div class="symbol">⌬</div>
+      <h3>Pharma & Life Sciences</h3>
+      <p>
+        Clinical research, translational informatics,
+        real-world evidence and scientific platforms.
+      </p>
+    </article>
+
+    <article class="expertise-card">
+      <div class="symbol">◈</div>
+      <h3>Digital Health & Diagnostics</h3>
+      <p>
+        Precision medicine, digital pathology,
+        clinical analytics and AI-enabled diagnostics.
+      </p>
+    </article>
+
+    <article class="expertise-card">
+      <div class="symbol">↗</div>
+      <h3>Enterprise Transformation</h3>
+      <p>
+        Technology strategy, AI product development,
+        business growth, transformation roadmaps
+        and executive advisory.
+      </p>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<!-- EDUCATION & RECOGNITION -->
+<section class="section">
+<div class="wrap">
+  <div class="eyebrow">EDUCATION & RECOGNITION</div>
+  <h2 class="section-title">Scientific foundations. Recognised delivery.</h2>
+
+  <div class="education">
+
+    <div class="education-card">
+      <h3>Ph.D. in Data Science (Bioinformatics)</h3>
+      <p>
+        University of Côte d’Azur, France<br>
+        2012–2015
+      </p>
+    </div>
+
+    <div class="education-card">
+      <h3>Professional Recognition</h3>
+      <p>
+        North Star Award – Data Engineering, 2023<br>
+        Best AI/ML Use Case, 2023<br>
+        Best Client Programme – BIDataLand, 2023
+      </p>
+    </div>
+
+  </div>
+
+  <p class="sub" style="margin-top:25px">
+    Author and contributor to scientific research with
+    8+ peer-reviewed publications.
+  </p>
+
+  <div class="academic-links">
+    <a class="academic-link"
+       href="https://scholar.google.de/citations?user=9ODfC4YAAAAJ&hl=en&oi=ao"
+       target="_blank" rel="noopener noreferrer">
+      GOOGLE SCHOLAR →
+    </a>
+
+    <a class="academic-link"
+       href="https://pubmed.ncbi.nlm.nih.gov/?term=Ashfaq+Mir"
+       target="_blank" rel="noopener noreferrer">
+      PUBMED PUBLICATIONS →
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- FOUNDER VISION -->
+<section class="vision">
+<div class="wrap">
+  <div class="eyebrow">THE VISION BEHIND VAAKH</div>
+
+  <h2>Turning intelligence into impact.</h2>
+
+  <p class="sub">
+    My mission is to help life sciences, healthcare and
+    enterprise organisations turn AI and data into measurable
+    business value, faster innovation and better-informed decisions.
+  </p>
+
+  <p class="sub">
+    VAAKH Technologies brings together AI, scientific expertise
+    and engineering excellence to help organisations move
+    confidently from ideas to implementation.
+  </p>
+
+  <a class="btn primary"
+     href="https://ashfaqmir300.github.io/vaakh-technologies/contact.html">
+    START A CONVERSATION →
+  </a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="wrap">
+
+  <div class="footerrow">
+    <span>© 2026 VAAKH Technologies. All rights reserved.</span>
+    <span>Munich, Germany | AI. Science. Transformation.</span>
+  </div>
+
+  <div class="footerrow" style="margin-top:14px">
+    <span>Connecting expertise with innovation.</span>
+
+    <div class="footerlinks">
+      <a href="https://ashfaqmir300.github.io/vaakh-technologies/index.html">Home</a>
+      <a href="https://ashfaqmir300.github.io/vaakh-technologies/about.html">About</a>
+      <a href="https://ashfaqmir300.github.io/vaakh-technologies/insights.html">Insights</a>
+      <a href="https://ashfaqmir300.github.io/vaakh-technologies/contact.html">Contact</a>
+      <a href="mailto:ashfaqmir@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/ashfaq-mir-ph-d-4530057/"
+         target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+
+</div>
+</footer>
+
+</div>
+</body>
+</html>
