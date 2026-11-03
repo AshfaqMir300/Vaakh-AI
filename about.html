@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us | VAAKH Technologies</title>
-<meta name="description" content="Discover VAAKH Technologies: bringing together artificial intelligence, data science, pharmaceutical expertise and engineering to create meaningful impact.">
+<meta name="description" content="Discover VAAKH Technologies: inspired by Kashmiri poetess Lal Ded, connecting artificial intelligence, data science, pharmaceutical expertise and engineering to create meaningful human impact.">
 
 <style>
 :root {
@@ -20,7 +20,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -54,7 +54,7 @@ nav {
 
 .navlinks {
   display: flex;
-  gap: 27px;
+  gap: 20px;
   align-items: center;
   font-size: 14px;
   font-weight: 600;
@@ -67,6 +67,11 @@ nav {
   color: white;
   padding: 11px 20px;
   border-radius: 25px;
+}
+
+.navlinks .nav-cta:hover {
+  color: white;
+  background: var(--deep);
 }
 
 .hero {
@@ -160,6 +165,112 @@ h1 {
 
 .story-art svg { max-width: 100%; }
 
+/* WHY VAAKH */
+
+.why-vaakh {
+  background: linear-gradient(135deg,#30204c,#493269);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-vaakh .eyebrow {
+  color: #f1c66e;
+}
+
+.why-vaakh .section-title {
+  color: white;
+  max-width: 850px;
+}
+
+.vaakh-intro {
+  font-size: 19px;
+  color: #e5d9f5;
+  max-width: 850px;
+  margin-bottom: 35px;
+}
+
+.vaakh-quote {
+  border-left: 4px solid #f1c66e;
+  padding: 20px 28px;
+  margin: 35px 0;
+  background: rgba(255,255,255,.07);
+  border-radius: 0 15px 15px 0;
+  font-size: 20px;
+  font-style: italic;
+  color: #f8e8c5;
+}
+
+.vaakh-description {
+  color: #e5d9f5;
+  margin-bottom: 20px;
+}
+
+.vaakh-subtitle {
+  color: white;
+  font-size: clamp(27px,3.5vw,36px);
+  margin-top: 45px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.vaakh-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.vaakh-card {
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(255,255,255,.07);
+  border-radius: 18px;
+  transition: .25s;
+}
+
+.vaakh-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,.11);
+}
+
+.vaakh-card h3 {
+  color: #f1c66e;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.vaakh-card p {
+  color: #e5d9f5;
+  font-size: 15px;
+}
+
+.vaakh-conclusion {
+  margin-top: 40px;
+  padding: 35px 25px;
+  text-align: center;
+  background: rgba(255,255,255,.08);
+  border-radius: 20px;
+}
+
+.vaakh-conclusion p {
+  color: #f8e8c5;
+  font-size: 21px;
+  font-weight: 600;
+  max-width: 850px;
+  margin: auto;
+}
+
+.vaakh-tagline {
+  margin-top: 22px;
+  color: #f1c66e;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+/* VALUES */
+
 .values {
   background: white;
 }
@@ -189,7 +300,12 @@ h1 {
   margin-bottom: 12px;
 }
 
-.value-card p { color: var(--muted); font-size: 15px; }
+.value-card p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* EXPERTISE */
 
 .expertise-grid {
   display: grid;
@@ -221,6 +337,8 @@ h1 {
   color: var(--muted);
   font-size: 14px;
 }
+
+/* LEADERSHIP */
 
 .leadership {
   background: linear-gradient(130deg,#eee7ff,#faf7ff);
@@ -254,7 +372,9 @@ h1 {
   margin-bottom: 12px;
 }
 
-.leadership-box p { color: var(--muted); }
+.leadership-box p {
+  color: var(--muted);
+}
 
 .stats {
   display: grid;
@@ -276,7 +396,12 @@ h1 {
   font-size: 34px;
 }
 
-.stat span { color: var(--muted); font-size: 14px; }
+.stat span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* CTA */
 
 .cta {
   text-align: center;
@@ -305,6 +430,8 @@ h1 {
   font-weight: 700;
 }
 
+/* FOOTER */
+
 footer {
   background: #241735;
   color: #ded4eb;
@@ -315,53 +442,139 @@ footer {
 
 footer strong { color: white; }
 
+/* RESPONSIVE */
+
 @media(max-width:800px) {
-  nav { padding: 17px 5%; flex-wrap: wrap; gap: 15px; }
-  .navlinks { gap: 14px; flex-wrap: wrap; font-size: 12px; }
-  .hero { padding: 75px 7%; }
-  .hero-flower { width: 120px; right: 1%; opacity: .35; }
-  .section { padding: 65px 7%; }
-  .story-grid { grid-template-columns: 1fr; }
-  .value-grid,.expertise-grid { grid-template-columns: 1fr; }
-  .leadership-box { grid-template-columns: 1fr; padding: 30px; }
-  .stats { grid-template-columns: 1fr; }
+
+  nav {
+    padding: 17px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navlinks {
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 75px 7%;
+  }
+
+  .hero-flower {
+    width: 120px;
+    right: 1%;
+    opacity: .35;
+  }
+
+  .section {
+    padding: 65px 7%;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-grid,
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vaakh-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-box {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
 }
+
+@media(max-width:480px) {
+
+  .logo {
+    font-size: 21px;
+  }
+
+  .navlinks {
+    gap: 10px;
+  }
+
+  .navlinks a {
+    font-size: 12px;
+  }
+
+  .vaakh-quote {
+    font-size: 17px;
+    padding: 18px;
+  }
+
+  .vaakh-tagline {
+    line-height: 1.8;
+  }
+
+  .leadership-symbol {
+    width: 110px;
+    height: 110px;
+  }
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
   <a class="logo" href="index.html">VAAKH<span> Technologies</span></a>
+
   <div class="navlinks">
-<a href="about.html">About</a>
-<a href="founder.html">Founder</a>
-<a href="services.html">Services</a>
-<a href="industries.html">Industries</a>
-<a href="insights.html">Insights</a>
+    <a href="about.html">About</a>
+    <a href="#why-vaakh">Why VAAKH?</a>
+    <a href="founder.html">Founder</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a href="insights.html">Insights</a>
     <a class="nav-cta" href="contact.html">Contact</a>
   </div>
 </nav>
 
+<!-- HERO -->
+
 <header class="hero">
+
   <div class="hero-inner">
+
     <div class="eyebrow">Who We Are</div>
+
     <h1>Where Science Meets Intelligence.</h1>
+
     <p>
       We bring together scientific thinking, artificial intelligence
       and engineering to transform complex challenges into meaningful
       opportunities for innovation and growth.
     </p>
+
   </div>
 
   <svg class="hero-flower" viewBox="0 0 220 300" fill="none"
        xmlns="http://www.w3.org/2000/svg">
+
     <path d="M110 130 C110 190 120 245 105 295"
           stroke="#668b46" stroke-width="6" stroke-linecap="round"/>
+
     <path d="M110 215 C65 175 30 195 68 222 C88 233 103 224 110 215Z"
           fill="#8eaf60"/>
+
     <path d="M109 250 C150 210 190 230 150 255 C132 265 116 258 109 250Z"
           fill="#8eaf60"/>
+
     <g transform="translate(110 80)">
       <ellipse rx="19" ry="48" fill="#f6c84f" transform="rotate(0) translate(0 -35)"/>
       <ellipse rx="19" ry="48" fill="#f6c84f" transform="rotate(45) translate(0 -35)"/>
@@ -370,19 +583,31 @@ footer strong { color: white; }
       <circle r="24" fill="#805024"/>
       <circle r="17" fill="#9b642a"/>
     </g>
+
   </svg>
+
 </header>
 
+<!-- OUR STORY -->
+
 <section class="section">
+
   <div class="section-inner story-grid">
+
     <div class="story-copy">
+
       <div class="eyebrow">Our Story</div>
-      <h2 class="section-title">Turning Complexity Into Possibility</h2>
+
+      <h2 class="section-title">
+        Turning Complexity Into Possibility
+      </h2>
+
       <p>
         VAAKH Technologies was conceived around a simple belief:
         technology creates its greatest value when it solves real
         scientific, operational and business problems.
       </p>
+
       <p>
         Across pharmaceutical research, life sciences, diagnostics
         and enterprise technology, organisations generate enormous
@@ -391,23 +616,29 @@ footer strong { color: white; }
         advanced analytics and modern engineering to make those
         decisions more informed and impactful.
       </p>
+
       <p>
         Our approach combines deep domain understanding with
         practical technology delivery. We aim to move beyond
         experimentation and help turn innovation into solutions
         that can work in the real world.
       </p>
+
     </div>
 
     <div class="story-art">
+
       <svg viewBox="0 0 340 270" width="100%" xmlns="http://www.w3.org/2000/svg">
+
         <circle cx="170" cy="125" r="95" fill="#d6c3f6"/>
         <circle cx="170" cy="125" r="68" fill="#eee5ff"/>
+
         <g stroke="#8c6bc0" stroke-width="3" fill="none">
           <path d="M95 100 L145 70 L195 100 L245 65"/>
           <path d="M95 155 L145 185 L195 150 L245 185"/>
           <path d="M145 70 L145 185 M195 100 L195 150"/>
         </g>
+
         <g fill="#fff">
           <circle cx="95" cy="100" r="10"/>
           <circle cx="145" cy="70" r="10"/>
@@ -418,99 +649,288 @@ footer strong { color: white; }
           <circle cx="195" cy="150" r="10"/>
           <circle cx="245" cy="185" r="10"/>
         </g>
+
         <circle cx="170" cy="125" r="25" fill="#f2c66e"/>
+
         <path d="M170 107 L170 143 M152 125 L188 125"
               stroke="#6c4a8e" stroke-width="5" stroke-linecap="round"/>
+
       </svg>
+
     </div>
+
   </div>
+
 </section>
 
-<section class="section values">
+<!-- WHY VAAKH -->
+
+<section class="section why-vaakh" id="why-vaakh">
+
   <div class="section-inner">
+
+    <div class="eyebrow">The Meaning Behind Our Name</div>
+
+    <h2 class="section-title">
+      Why VAAKH? A Voice That Connects Wisdom, Science & Humanity.
+    </h2>
+
+    <p class="vaakh-intro">
+      Every name has a story. Ours is rooted in the timeless wisdom
+      of Kashmir and inspired by Lal Ded (Lalleshwari), the
+      14th-century Kashmiri mystic poetess whose words continue
+      to inspire generations.
+    </p>
+
+    <div class="vaakh-quote">
+      VAAKH represents the power of expression, the pursuit
+      of truth, and the ability to transform complex thoughts
+      into meaningful understanding.
+    </div>
+
+    <p class="vaakh-description">
+      In Kashmiri, a Vaakh is a verse, an expression or a
+      meaningful articulation of thought and wisdom. Lal Ded's
+      Vaakhs were much more than poetry. They conveyed profound
+      philosophical insights through powerful, accessible
+      expressions, challenging conventional thinking and
+      encouraging self-discovery.
+    </p>
+
+    <p class="vaakh-description">
+      This philosophy resonates deeply with our vision at
+      VAAKH Technologies. We work at the intersection of
+      Data Science, Artificial Intelligence, Pharmaceutical
+      Innovation and Human Healthcare, where the real value
+      lies not simply in generating information, but in
+      transforming it into knowledge, intelligence and
+      meaningful outcomes.
+    </p>
+
+    <h2 class="vaakh-subtitle">
+      Giving Data a Voice. Giving Science a Purpose.
+    </h2>
+
+    <p class="vaakh-description">
+      We live in a world overflowing with data, scientific
+      discoveries and technological possibilities. Yet,
+      the real challenge is finding meaning within complexity
+      and translating knowledge into decisions that can
+      improve human lives.
+    </p>
+
+    <div class="vaakh-grid">
+
+      <div class="vaakh-card">
+        <h3>01. Data Needs a Voice</h3>
+        <p>
+          Raw data holds enormous potential. Through data
+          science, analytics and intelligent interpretation,
+          we uncover hidden patterns, generate insights and
+          transform information into actionable knowledge.
+        </p>
+      </div>
+
+      <div class="vaakh-card">
+        <h3>02. Science Needs Understanding</h3>
+        <p>
+          Scientific discoveries create value when complex
+          research can be translated into practical knowledge.
+          We aim to bridge the gap between scientific discovery,
+          technological innovation and real-world application.
+        </p>
+      </div>
+
+      <div class="vaakh-card">
+        <h3>03. AI Needs Purpose</h3>
+        <p>
+          Artificial Intelligence should do more than automate
+          tasks or generate predictions. It should augment
+          human intelligence, support better decisions and
+          accelerate meaningful scientific and business innovation.
+        </p>
+      </div>
+
+      <div class="vaakh-card">
+        <h3>04. Healthcare Needs Humanity</h3>
+        <p>
+          Behind every dataset, molecule, clinical trial,
+          algorithm and medical breakthrough is a human life.
+          We believe technology must ultimately serve people,
+          improve healthcare outcomes and enable more
+          personalised, predictive and effective care.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="vaakh-conclusion">
+
+      <p>
+        Our motivation is to transform data into knowledge,
+        knowledge into intelligence, and intelligence into
+        meaningful impact on human lives.
+      </p>
+
+      <div class="vaakh-tagline">
+        ROOTED IN WISDOM. DRIVEN BY SCIENCE.
+        POWERED BY INTELLIGENCE. INSPIRED BY HUMANITY.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- VISION, MISSION AND VALUES -->
+
+<section class="section values">
+
+  <div class="section-inner">
+
     <div class="eyebrow">Our Purpose</div>
+
     <h2 class="section-title">Vision, Mission & Values</h2>
+
     <p class="section-intro">
       Our purpose is to make advanced technology useful, responsible
       and accessible to the organisations shaping tomorrow.
     </p>
 
     <div class="value-grid">
+
       <div class="value-card">
+
         <div class="value-icon">🔭</div>
+
         <h3>Our Vision</h3>
+
         <p>
           To be a trusted technology and scientific innovation
           partner, helping create a future where intelligence,
           discovery and engineering improve lives and businesses.
         </p>
+
       </div>
 
       <div class="value-card">
+
         <div class="value-icon">🎯</div>
+
         <h3>Our Mission</h3>
+
         <p>
           To connect domain expertise, data science, artificial
           intelligence and engineering to deliver practical,
           scalable and measurable solutions.
         </p>
+
       </div>
 
       <div class="value-card">
+
         <div class="value-icon">🌱</div>
+
         <h3>Our Values</h3>
+
         <p>
           Scientific integrity, curiosity, collaboration,
           responsible innovation, transparency and a commitment
           to meaningful outcomes.
         </p>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
+<!-- EXPERTISE -->
+
 <section class="section">
+
   <div class="section-inner">
+
     <div class="eyebrow">What We Bring</div>
+
     <h2 class="section-title">Our Areas of Expertise</h2>
+
     <p class="section-intro">
       We work at the intersection of scientific research,
       intelligent data solutions and enterprise engineering.
     </p>
 
     <div class="expertise-grid">
+
       <div class="expertise-card">
         <h3>Artificial Intelligence & GenAI</h3>
-        <p>Machine learning, generative AI, LLMs, RAG, intelligent agents and AI strategy.</p>
+        <p>
+          Machine learning, generative AI, LLMs, RAG,
+          intelligent agents and AI strategy.
+        </p>
       </div>
+
       <div class="expertise-card">
         <h3>Data Science & Analytics</h3>
-        <p>Predictive modelling, advanced analytics, data strategy and decision intelligence.</p>
+        <p>
+          Predictive modelling, advanced analytics,
+          data strategy and decision intelligence.
+        </p>
       </div>
+
       <div class="expertise-card">
         <h3>Pharma & Life Sciences</h3>
-        <p>Drug discovery, translational research, clinical development and scientific informatics.</p>
+        <p>
+          Drug discovery, translational research,
+          clinical development and scientific informatics.
+        </p>
       </div>
+
       <div class="expertise-card">
         <h3>Bioinformatics & Multi-Omics</h3>
-        <p>Genomics, biomarker discovery, precision medicine and biological data integration.</p>
+        <p>
+          Genomics, biomarker discovery, precision medicine
+          and biological data integration.
+        </p>
       </div>
+
       <div class="expertise-card">
         <h3>Digital Transformation</h3>
-        <p>Technology modernisation, cloud data platforms, enterprise architecture and automation.</p>
+        <p>
+          Technology modernisation, cloud data platforms,
+          enterprise architecture and automation.
+        </p>
       </div>
+
       <div class="expertise-card">
         <h3>Engineering & Innovation</h3>
-        <p>Scalable software solutions, data engineering, system integration and intelligent workflows.</p>
+        <p>
+          Scalable software solutions, data engineering,
+          system integration and intelligent workflows.
+        </p>
       </div>
+
     </div>
+
   </div>
+
 </section>
 
+<!-- LEADERSHIP -->
+
 <section class="section leadership">
+
   <div class="section-inner">
+
     <div class="eyebrow">Leadership</div>
-    <h2 class="section-title">Scientific Thinking. Technology Leadership.</h2>
+
+    <h2 class="section-title">
+      Scientific Thinking. Technology Leadership.
+    </h2>
+
     <p class="section-intro">
       Our leadership approach is grounded in scientific depth,
       industry experience and the ability to translate complex
@@ -518,55 +938,82 @@ footer strong { color: white; }
     </p>
 
     <div class="leadership-box">
+
       <div class="leadership-symbol">✦</div>
+
       <div>
+
         <h3>Founder-led Expertise</h3>
+
         <p>
           VAAKH Technologies is shaped by more than 12 years of
           experience spanning data science, bioinformatics,
           pharmaceutical R&D, diagnostics, consulting and enterprise
           technology.
         </p>
+
         <p style="margin-top:12px">
           This cross-disciplinary perspective brings together
           scientific understanding, strategic thinking and practical
           delivery experience. Our focus is on building trusted
           partnerships and solutions that create lasting value.
         </p>
+
       </div>
+
     </div>
 
     <div class="stats">
+
       <div class="stat">
         <strong>12+</strong>
         <span>Years of industry experience</span>
       </div>
+
       <div class="stat">
         <strong>€6M+</strong>
         <span>Transformation portfolio experience</span>
       </div>
+
       <div class="stat">
         <strong>50+</strong>
         <span>Global team leadership experience</span>
       </div>
+
     </div>
+
   </div>
+
 </section>
 
+<!-- CALL TO ACTION -->
+
 <section class="cta">
+
   <h2>Let's Create Something Meaningful.</h2>
+
   <p>
     Have a scientific, data or technology challenge?
     Let's explore how VAAKH Technologies can help turn
     your ideas into impact.
   </p>
+
   <a href="contact.html">Start a Conversation →</a>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
   <strong>VAAKH Technologies</strong>
+
   <p>Science. Intelligence. Engineering.</p>
-  <p style="margin-top:10px">© 2026 VAAKH Technologies. All rights reserved.</p>
+
+  <p style="margin-top:10px">
+    © 2026 VAAKH Technologies. All rights reserved.
+  </p>
+
 </footer>
 
 </body>
