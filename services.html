@@ -1,13 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | <title>Contact Us |     <header>
-        <h1>VAAKH AI</h1>
-        <p>Intelligent Systems</p>
-    </header></title></title>
+<title>Services | VAAKH AI - Intelligent Systems</title>
+
 <meta name="description" content="Explore AI, GenAI, Data Science, Bioinformatics, Pharma R&D, Engineering and Digital Transformation services from VAAKH Technologies.">
 
 <style>
@@ -23,32 +20,70 @@
 
 * {box-sizing:border-box;margin:0;padding:0}
 html {scroll-behavior:smooth}
+
 body {
   font-family:Arial,Helvetica,sans-serif;
   background:#fbf9ff;
   color:var(--ink);
   line-height:1.7;
 }
+
 a {text-decoration:none;color:inherit}
 
+/* COMPANY BRANDING */
+.brand {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  text-align:left;
+  margin:0;
+  padding:0;
+  line-height:1;
+  flex-shrink:0;
+}
+
+.brand-name {
+  font-family:"Calibri Black","Calibri",sans-serif;
+  font-size:28px;
+  font-weight:900;
+  color:#000000;
+  margin:0;
+  padding:0;
+  line-height:1;
+  letter-spacing:0;
+}
+
+.brand-tagline {
+  font-family:Calibri,sans-serif;
+  font-size:18px;
+  font-weight:400;
+  color:#7030A0;
+  margin:0;
+  padding:0;
+  line-height:1.1;
+  text-align:left;
+}
+
+/* NAVIGATION */
 nav {
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:20px 8%;
+  padding:14px 8%;
   background:rgba(255,255,255,.96);
   position:sticky;
   top:0;
   z-index:10;
   box-shadow:0 3px 18px rgba(50,30,80,.06);
 }
+
 .logo {
-  font-size:23px;
-  font-weight:800;
-  color:var(--deep);
-  letter-spacing:1px;
+  display:block;
+  margin:0;
+  padding:0;
 }
-.logo span {color:var(--purple)}
+
 .navlinks {
   display:flex;
   gap:25px;
@@ -56,7 +91,9 @@ nav {
   font-size:14px;
   font-weight:600;
 }
+
 .navlinks a:hover {color:var(--purple)}
+
 .nav-cta {
   background:var(--purple);
   color:white;
@@ -64,17 +101,20 @@ nav {
   border-radius:25px;
 }
 
+/* HERO */
 .hero {
   position:relative;
   overflow:hidden;
   padding:105px 8% 95px;
   background:linear-gradient(130deg,#eee7ff,#faf6ff 58%,#fcefcf);
 }
+
 .hero-content {
   max-width:850px;
   position:relative;
   z-index:2;
 }
+
 .eyebrow {
   color:var(--purple);
   text-transform:uppercase;
@@ -83,17 +123,20 @@ nav {
   font-size:12px;
   margin-bottom:17px;
 }
+
 h1 {
   color:var(--deep);
   font-size:clamp(42px,6vw,70px);
   line-height:1.1;
   margin-bottom:24px;
 }
+
 .hero p {
   max-width:720px;
   font-size:19px;
   color:#625774;
 }
+
 .hero-decoration {
   position:absolute;
   right:7%;
@@ -102,14 +145,17 @@ h1 {
   opacity:.75;
 }
 
+/* SECTIONS */
 .section {padding:80px 8%}
 .inner {max-width:1150px;margin:auto}
+
 .section-title {
   color:var(--deep);
   font-size:clamp(30px,4vw,43px);
   line-height:1.2;
   margin-bottom:17px;
 }
+
 .intro {
   max-width:760px;
   color:var(--muted);
@@ -117,11 +163,13 @@ h1 {
   margin-bottom:38px;
 }
 
+/* SERVICES */
 .service-grid {
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:23px;
 }
+
 .service-card {
   background:white;
   border:1px solid #eee7f8;
@@ -131,10 +179,12 @@ h1 {
   position:relative;
   overflow:hidden;
 }
+
 .service-card:hover {
   transform:translateY(-5px);
   box-shadow:0 15px 35px rgba(70,45,110,.09);
 }
+
 .service-icon {
   width:54px;
   height:54px;
@@ -146,16 +196,19 @@ h1 {
   font-size:27px;
   margin-bottom:20px;
 }
+
 .service-card h3 {
   color:var(--deep);
   font-size:23px;
   margin-bottom:12px;
 }
+
 .service-card > p {
   color:var(--muted);
   font-size:15px;
   margin-bottom:18px;
 }
+
 .service-card h4 {
   color:var(--purple);
   font-size:13px;
@@ -163,24 +216,28 @@ h1 {
   letter-spacing:1px;
   margin:20px 0 10px;
 }
+
 .service-card ul {
   list-style:none;
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:9px;
 }
+
 .service-card li {
   font-size:13px;
   color:#61586f;
   padding-left:16px;
   position:relative;
 }
+
 .service-card li:before {
   content:"✦";
   position:absolute;
   left:0;
   color:var(--gold);
 }
+
 .service-number {
   position:absolute;
   top:20px;
@@ -190,73 +247,89 @@ h1 {
   font-weight:800;
 }
 
+/* DIFFERENTIATION */
 .highlight {
   background:linear-gradient(130deg,#eee7ff,#faf7ff);
 }
+
 .highlight-grid {
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:20px;
   margin-top:35px;
 }
+
 .highlight-card {
   background:white;
   border-radius:20px;
   padding:28px;
 }
+
 .highlight-card h3 {
   color:var(--deep);
   margin-bottom:10px;
   font-size:19px;
 }
+
 .highlight-card p {
   color:var(--muted);
   font-size:14px;
 }
 
-.approach {
-  background:white;
-}
+/* APPROACH */
+.approach {background:white}
+
 .steps {
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:18px;
   margin-top:35px;
 }
+
 .step {
   border-top:3px solid #b79bdf;
   padding:23px 18px;
   background:#faf8ff;
   border-radius:0 0 17px 17px;
 }
+
 .step span {
   color:var(--purple);
   font-size:13px;
   font-weight:800;
   letter-spacing:1px;
 }
+
 .step h3 {
   color:var(--deep);
   margin:12px 0 9px;
   font-size:18px;
 }
-.step p {color:var(--muted);font-size:14px}
 
+.step p {
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* CTA */
 .cta {
   text-align:center;
   padding:85px 8%;
   background:var(--deep);
   color:white;
 }
+
 .cta h2 {
   font-size:clamp(30px,4vw,44px);
   margin-bottom:15px;
 }
+
 .cta p {
   color:#ded2f3;
   max-width:680px;
   margin:0 auto 28px;
 }
+
 .cta a {
   display:inline-block;
   background:#f1c66e;
@@ -266,6 +339,7 @@ h1 {
   font-weight:700;
 }
 
+/* FOOTER */
 footer {
   background:#241735;
   color:#ded4eb;
@@ -273,19 +347,46 @@ footer {
   padding:30px 8%;
   font-size:13px;
 }
+
 footer strong {color:white}
 
+/* RESPONSIVE */
 @media(max-width:850px) {
-  nav {padding:16px 5%;flex-wrap:wrap;gap:12px}
-  .navlinks {gap:13px;flex-wrap:wrap;font-size:12px}
+  nav {
+    padding:14px 5%;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+
+  .navlinks {
+    gap:13px;
+    flex-wrap:wrap;
+    font-size:12px;
+  }
+
   .hero {padding:75px 7%}
-  .hero-decoration {width:110px;opacity:.35}
+
+  .hero-decoration {
+    width:110px;
+    opacity:.35;
+  }
+
   .section {padding:65px 7%}
+
   .service-grid {grid-template-columns:1fr}
   .highlight-grid {grid-template-columns:1fr}
   .steps {grid-template-columns:1fr 1fr}
 }
+
 @media(max-width:520px) {
+  .brand-name {font-size:25px}
+  .brand-tagline {font-size:17px}
+
+  .navlinks {
+    width:100%;
+    justify-content:flex-start;
+  }
+
   .service-card {padding:25px 21px}
   .service-card ul {grid-template-columns:1fr}
   .steps {grid-template-columns:1fr}
@@ -296,14 +397,20 @@ footer strong {color:white}
 <body>
 
 <nav>
-  <a class="logo" href="index.html">VAAKH<span> Technologies</span></a>
+  <a class="logo" href="index.html" aria-label="VAAKH AI Home">
+    <div class="brand">
+      <div class="brand-name">VAAKH AI</div>
+      <div class="brand-tagline">Intelligent Systems</div>
+    </div>
+  </a>
+
   <div class="navlinks">
-<a href="about.html">About</a>
-<a href="founder.html">Founder</a>
-<a href="services.html">Services</a>
-<a href="industries.html">Industries</a>
-<a href="insights.html">Insights</a>
-<a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="founder.html">Founder</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a href="insights.html">Insights</a>
+    <a href="contact.html">Contact</a>
   </div>
 </nav>
 
