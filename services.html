@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | VAAKH Technologies</title>
+<meta name="description" content="Explore AI, GenAI, Data Science, Bioinformatics, Pharma R&D, Engineering and Digital Transformation services from VAAKH Technologies.">
+
+<style>
+:root {
+  --lavender:#eee8ff;
+  --purple:#7652b5;
+  --deep:#30204c;
+  --ink:#342b43;
+  --muted:#70677e;
+  --gold:#e6ad40;
+  --white:#fff;
+}
+
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
+body {
+  font-family:Arial,Helvetica,sans-serif;
+  background:#fbf9ff;
+  color:var(--ink);
+  line-height:1.7;
+}
+a {text-decoration:none;color:inherit}
+
+nav {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 8%;
+  background:rgba(255,255,255,.96);
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 3px 18px rgba(50,30,80,.06);
+}
+.logo {
+  font-size:23px;
+  font-weight:800;
+  color:var(--deep);
+  letter-spacing:1px;
+}
+.logo span {color:var(--purple)}
+.navlinks {
+  display:flex;
+  gap:25px;
+  align-items:center;
+  font-size:14px;
+  font-weight:600;
+}
+.navlinks a:hover {color:var(--purple)}
+.nav-cta {
+  background:var(--purple);
+  color:white;
+  padding:10px 19px;
+  border-radius:25px;
+}
+
+.hero {
+  position:relative;
+  overflow:hidden;
+  padding:105px 8% 95px;
+  background:linear-gradient(130deg,#eee7ff,#faf6ff 58%,#fcefcf);
+}
+.hero-content {
+  max-width:850px;
+  position:relative;
+  z-index:2;
+}
+.eyebrow {
+  color:var(--purple);
+  text-transform:uppercase;
+  font-weight:800;
+  letter-spacing:3px;
+  font-size:12px;
+  margin-bottom:17px;
+}
+h1 {
+  color:var(--deep);
+  font-size:clamp(42px,6vw,70px);
+  line-height:1.1;
+  margin-bottom:24px;
+}
+.hero p {
+  max-width:720px;
+  font-size:19px;
+  color:#625774;
+}
+.hero-decoration {
+  position:absolute;
+  right:7%;
+  bottom:5px;
+  width:190px;
+  opacity:.75;
+}
+
+.section {padding:80px 8%}
+.inner {max-width:1150px;margin:auto}
+.section-title {
+  color:var(--deep);
+  font-size:clamp(30px,4vw,43px);
+  line-height:1.2;
+  margin-bottom:17px;
+}
+.intro {
+  max-width:760px;
+  color:var(--muted);
+  font-size:17px;
+  margin-bottom:38px;
+}
+
+.service-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:23px;
+}
+.service-card {
+  background:white;
+  border:1px solid #eee7f8;
+  border-radius:23px;
+  padding:32px;
+  transition:transform .25s,box-shadow .25s;
+  position:relative;
+  overflow:hidden;
+}
+.service-card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(70,45,110,.09);
+}
+.service-icon {
+  width:54px;
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:16px;
+  background:#eee7ff;
+  font-size:27px;
+  margin-bottom:20px;
+}
+.service-card h3 {
+  color:var(--deep);
+  font-size:23px;
+  margin-bottom:12px;
+}
+.service-card > p {
+  color:var(--muted);
+  font-size:15px;
+  margin-bottom:18px;
+}
+.service-card h4 {
+  color:var(--purple);
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin:20px 0 10px;
+}
+.service-card ul {
+  list-style:none;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+}
+.service-card li {
+  font-size:13px;
+  color:#61586f;
+  padding-left:16px;
+  position:relative;
+}
+.service-card li:before {
+  content:"✦";
+  position:absolute;
+  left:0;
+  color:var(--gold);
+}
+.service-number {
+  position:absolute;
+  top:20px;
+  right:24px;
+  color:#eee7f8;
+  font-size:45px;
+  font-weight:800;
+}
+
+.highlight {
+  background:linear-gradient(130deg,#eee7ff,#faf7ff);
+}
+.highlight-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:35px;
+}
+.highlight-card {
+  background:white;
+  border-radius:20px;
+  padding:28px;
+}
+.highlight-card h3 {
+  color:var(--deep);
+  margin-bottom:10px;
+  font-size:19px;
+}
+.highlight-card p {
+  color:var(--muted);
+  font-size:14px;
+}
+
+.approach {
+  background:white;
+}
+.steps {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-top:35px;
+}
+.step {
+  border-top:3px solid #b79bdf;
+  padding:23px 18px;
+  background:#faf8ff;
+  border-radius:0 0 17px 17px;
+}
+.step span {
+  color:var(--purple);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+.step h3 {
+  color:var(--deep);
+  margin:12px 0 9px;
+  font-size:18px;
+}
+.step p {color:var(--muted);font-size:14px}
+
+.cta {
+  text-align:center;
+  padding:85px 8%;
+  background:var(--deep);
+  color:white;
+}
+.cta h2 {
+  font-size:clamp(30px,4vw,44px);
+  margin-bottom:15px;
+}
+.cta p {
+  color:#ded2f3;
+  max-width:680px;
+  margin:0 auto 28px;
+}
+.cta a {
+  display:inline-block;
+  background:#f1c66e;
+  color:#30204c;
+  padding:13px 28px;
+  border-radius:30px;
+  font-weight:700;
+}
+
+footer {
+  background:#241735;
+  color:#ded4eb;
+  text-align:center;
+  padding:30px 8%;
+  font-size:13px;
+}
+footer strong {color:white}
+
+@media(max-width:850px) {
+  nav {padding:16px 5%;flex-wrap:wrap;gap:12px}
+  .navlinks {gap:13px;flex-wrap:wrap;font-size:12px}
+  .hero {padding:75px 7%}
+  .hero-decoration {width:110px;opacity:.35}
+  .section {padding:65px 7%}
+  .service-grid {grid-template-columns:1fr}
+  .highlight-grid {grid-template-columns:1fr}
+  .steps {grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px) {
+  .service-card {padding:25px 21px}
+  .service-card ul {grid-template-columns:1fr}
+  .steps {grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a class="logo" href="index.html">VAAKH<span> Technologies</span></a>
+  <div class="navlinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a class="nav-cta" href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">What We Do</div>
+    <h1>Intelligence That Creates Impact.</h1>
+    <p>
+      From artificial intelligence and advanced analytics to
+      scientific innovation and enterprise engineering, we help
+      organisations turn complex challenges into practical,
+      scalable technology solutions.
+    </p>
+  </div>
+
+  <svg class="hero-decoration" viewBox="0 0 200 250"
+       xmlns="http://www.w3.org/2000/svg" fill="none">
+    <path d="M100 120 C100 170 120 210 105 250"
+          stroke="#668b46" stroke-width="6" stroke-linecap="round"/>
+    <path d="M105 195 C55 155 25 190 70 207 C90 215 101 204 105 195Z"
+          fill="#8eaf60"/>
+    <g transform="translate(100 85)">
+      <ellipse rx="15" ry="39" fill="#f6c84f" transform="translate(0 -29)"/>
+      <ellipse rx="15" ry="39" fill="#f6c84f" transform="rotate(45) translate(0 -29)"/>
+      <ellipse rx="15" ry="39" fill="#f6c84f" transform="rotate(90) translate(0 -29)"/>
+      <ellipse rx="15" ry="39" fill="#f6c84f" transform="rotate(135) translate(0 -29)"/>
+      <circle r="21" fill="#805024"/>
+    </g>
+  </svg>
+</header>
+
+<section class="section">
+<div class="inner">
+  <div class="eyebrow">Our Capabilities</div>
+  <h2 class="section-title">End-to-End Technology & Scientific Solutions</h2>
+  <p class="intro">
+    We combine domain knowledge, data-driven thinking and modern
+    engineering to support organisations at every stage of their
+    transformation journey.
+  </p>
+
+  <div class="service-grid">
+
+    <article class="service-card">
+      <span class="service-number">01</span>
+      <div class="service-icon">🤖</div>
+      <h3>Artificial Intelligence & GenAI</h3>
+      <p>
+        Design and develop intelligent solutions that automate
+        workflows, unlock organisational knowledge and support
+        faster, better-informed decisions.
+      </p>
+      <h4>Our capabilities</h4>
+      <ul>
+        <li>Generative AI & LLMs</li>
+        <li>Retrieval-Augmented Generation</li>
+        <li>AI agents & automation</li>
+        <li>Machine learning</li>
+        <li>AI strategy & adoption</li>
+        <li>Responsible AI & governance</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <span class="service-number">02</span>
+      <div class="service-icon">📊</div>
+      <h3>Data Science & Advanced Analytics</h3>
+      <p>
+        Transform fragmented and complex data into actionable
+        insights through statistical modelling, predictive
+        analytics and intelligent decision systems.
+      </p>
+      <h4>Our capabilities</h4>
+      <ul>
+        <li>Predictive modelling</li>
+        <li>Statistical analysis</li>
+        <li>Data mining & exploration</li>
+        <li>Business intelligence</li>
+        <li>Data strategy</li>
+        <li>Decision intelligence</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <span class="service-number">03</span>
+      <div class="service-icon">🧬</div>
+      <h3>Bioinformatics & Computational Biology</h3>
+      <p>
+        Apply computational methods and advanced analytics to
+        biological data, helping research teams extract meaningful
+        insights from complex molecular datasets.
+      </p>
+      <h4>Our capabilities</h4>
+      <ul>
+        <li>Genomics & transcriptomics</li>
+        <li>Multi-omics integration</li>
+        <li>Biomarker discovery</li>
+        <li>Biological data analysis</li>
+        <li>Precision medicine analytics</li>
+        <li>Scientific data pipelines</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <span class="service-number">04</span>
+      <div class="service-icon">🔬</div>
+      <h3>Pharmaceutical R&D & Life Sciences</h3>
+      <p>
+        Support scientific and research organisations with
+        data-driven approaches across discovery, development
+        and translational research.
+      </p>
+      <h4>Our capabilities</h4>
+      <ul>
+        <li>Drug discovery analytics</li>
+        <li>Translational research</li>
+        <li>Clinical data analytics</li>
+        <li>Biomarker strategy</li>
+        <li>Real-world evidence</li>
+        <li>Digital pathology analytics</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <span class="service-number">05</span>
+      <div class="service-icon">⚙️</div>
+      <h3>Engineering & Data Platforms</h3>
+      <p>
+        Build reliable, scalable and secure technology foundations
+        that connect data, applications and intelligent systems
+        across the enterprise.
+      </p>
+      <h4>Our capabilities</h4>
+      <ul>
+        <li>Data engineering</li>
+        <li>Cloud data platforms</li>
+        <li>Software architecture</li>
+        <li>API & system integration</li>
+        <li>Workflow automation</li>
+        <li>Platform modernisation</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <span class="service-number">06</span>
+      <div class="service-icon">🚀</div>
+      <h3>Digital Transformation & Consulting</h3>
+      <p>
+        Help organisations define technology roadmaps, modernise
+        operating models and translate strategic ambitions into
+        executable transformation programmes.
+      </p>
+      <h4>Our capabilities</h4>
+      <ul>
+        <li>Digital strategy</li>
+        <li>Technology roadmaps</li>
+        <li>AI transformation</li>
+        <li>Programme leadership</li>
+        <li>Operating model design</li>
+        <li>Change & adoption</li>
+      </ul>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<section class="section highlight">
+<div class="inner">
+  <div class="eyebrow">Our Differentiation</div>
+  <h2 class="section-title">Beyond Technology. Towards Real Outcomes.</h2>
+  <p class="intro">
+    Successful transformation requires more than tools and algorithms.
+    It requires scientific understanding, strategic alignment and
+    the ability to deliver solutions that work in practice.
+  </p>
+
+  <div class="highlight-grid">
+    <div class="highlight-card">
+      <h3>Domain-Driven Thinking</h3>
+      <p>We start with the scientific, business or operational problem—not the technology trend.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Connected Expertise</h3>
+      <p>We bring AI, data science, life sciences and engineering perspectives together.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Practical Delivery</h3>
+      <p>We focus on solutions designed for adoption, scalability and measurable business value.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section approach">
+<div class="inner">
+  <div class="eyebrow">How We Work</div>
+  <h2 class="section-title">From Challenge to Impact</h2>
+  <p class="intro">
+    A collaborative approach that connects business priorities
+    with technology execution.
+  </p>
+
+  <div class="steps">
+    <div class="step">
+      <span>STEP 01</span>
+      <h3>Discover</h3>
+      <p>Understand your challenges, objectives, data landscape and priorities.</p>
+    </div>
+    <div class="step">
+      <span>STEP 02</span>
+      <h3>Design</h3>
+      <p>Define the solution architecture, roadmap and success measures.</p>
+    </div>
+    <div class="step">
+      <span>STEP 03</span>
+      <h3>Develop</h3>
+      <p>Build, integrate and validate solutions with the right expertise.</p>
+    </div>
+    <div class="step">
+      <span>STEP 04</span>
+      <h3>Deliver & Evolve</h3>
+      <p>Support adoption, measure outcomes and continuously improve.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="cta">
+  <h2>Have a Challenge in Mind?</h2>
+  <p>
+    Whether you are exploring AI, modernising data platforms
+    or advancing scientific research, let's discuss how we
+    can work together.
+  </p>
+  <a href="contact.html">Discuss Your Project →</a>
+</section>
+
+<footer>
+  <strong>VAAKH Technologies</strong>
+  <p>Science. Intelligence. Engineering.</p>
+  <p style="margin-top:10px">
+    © 2026 VAAKH Technologies. All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>
