@@ -1,14 +1,13 @@
- 
+ ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us |     <header>
-        <h1>VAAKH AI</h1>
-        <p>Intelligent Systems</p>
-    </header></title>
-  <meta name="description" content="Contact VAAKH Technologies in Munich, Germany for AI, data science, pharma, life sciences and digital transformation consulting.">
+
+  <title>Contact Us | VAAKH AI - Intelligent Systems</title>
+
+  <meta name="description" content="Contact VAAKH AI in Munich, Germany for AI, data science, pharma, life sciences and digital transformation consulting.">
 
   <style>
     :root {
@@ -43,9 +42,11 @@
       text-decoration: underline;
     }
 
+    /* HEADER AND BRANDING */
+
     header {
       background: var(--white);
-      padding: 18px 7%;
+      padding: 12px 7%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -54,15 +55,35 @@
       border-bottom: 1px solid #eee9f5;
     }
 
-    .logo {
-      font-size: 25px;
-      font-weight: 800;
-      color: var(--deep-purple);
-      letter-spacing: 1px;
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
     }
 
-    .logo span {
-      color: var(--purple);
+    .logo {
+      font-family: "Calibri Black", Calibri, sans-serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .logo-tagline {
+      font-family: Calibri, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: #7030A0;
+      margin: 0;
+      padding: 0;
+      line-height: 1.1;
+      text-align: left;
     }
 
     nav {
@@ -76,6 +97,8 @@
       font-size: 14px;
       font-weight: 600;
     }
+
+    /* HERO SECTION */
 
     .hero {
       background: linear-gradient(135deg, #eee7fa, #faf8fe);
@@ -100,6 +123,8 @@
       color: var(--muted);
       font-size: 17px;
     }
+
+    /* MAIN CONTENT */
 
     .container {
       max-width: 1150px;
@@ -143,6 +168,8 @@
       color: var(--muted);
       overflow-wrap: anywhere;
     }
+
+    /* CONTACT FORM */
 
     .form-card {
       background: var(--white);
@@ -216,6 +243,8 @@
       margin-top: 15px;
     }
 
+    /* WHY US SECTION */
+
     .why-us {
       background: var(--lavender);
       text-align: center;
@@ -250,6 +279,8 @@
       font-size: 14px;
     }
 
+    /* CALL TO ACTION */
+
     .cta {
       text-align: center;
       padding: 65px 7%;
@@ -273,6 +304,8 @@
       font-weight: 700;
     }
 
+    /* FOOTER */
+
     footer {
       background: var(--deep-purple);
       color: white;
@@ -285,7 +318,10 @@
       color: #f6d66f;
     }
 
+    /* RESPONSIVE DESIGN */
+
     @media (max-width: 800px) {
+
       .contact-grid {
         grid-template-columns: 1fr;
       }
@@ -295,7 +331,7 @@
       }
 
       header {
-        justify-content: center;
+        justify-content: space-between;
       }
 
       nav {
@@ -306,38 +342,80 @@
         padding: 23px;
       }
     }
+
+    @media (max-width: 500px) {
+
+      header {
+        justify-content: center;
+      }
+
+      .logo-container {
+        width: 100%;
+        align-items: flex-start;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-  <div class="logo">VAAKH <span>Technologies</span></div>
+
+  <div class="logo-container">
+    <div class="logo">VAAKH AI</div>
+    <p class="logo-tagline">Intelligent Systems</p>
+  </div>
 
   <nav>
-<a href="about.html">About</a>
-<a href="founder.html">Founder</a>
-<a href="services.html">Services</a>
-<a href="industries.html">Industries</a>
-<a href="insights.html">Insights</a>
-<a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="founder.html">Founder</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a href="insights.html">Insights</a>
+    <a href="contact.html">Contact</a>
   </nav>
+
 </header>
 
+<!-- HERO SECTION -->
+
 <section class="hero">
+
   <div class="sunflower">🌻</div>
+
   <h1>Let's Connect</h1>
+
   <p>
     Have a business challenge, an innovative idea or a transformation
     opportunity? Let's explore how VAAKH Technologies can help you
     turn possibilities into meaningful outcomes.
   </p>
+
 </section>
 
+<!-- MAIN CONTACT CONTENT -->
+
 <main class="container">
+
   <div class="contact-grid">
 
     <section>
+
       <h2>Get in Touch</h2>
 
       <p class="intro">
@@ -347,40 +425,57 @@
       </p>
 
       <div class="info-card">
+
         <h3>✉ Business Email</h3>
+
         <p>
           <a href="mailto:ashfaqmir@gmail.com">
             ashfaqmir@gmail.com
           </a>
         </p>
+
       </div>
 
       <div class="info-card">
+
         <h3>🔗 LinkedIn</h3>
+
         <p>
           <a href="https://www.linkedin.com/in/ashfaq-mir-ph-d-4530057/"
              target="_blank" rel="noopener noreferrer">
             Connect with Ashfaq Mir on LinkedIn
           </a>
         </p>
+
       </div>
 
       <div class="info-card">
+
         <h3>📍 Location</h3>
+
         <p>Munich, Germany</p>
+
         <p>Connecting with clients and partners globally.</p>
+
       </div>
 
       <div class="info-card">
+
         <h3>🤝 Business Enquiries</h3>
+
         <p>
           Consulting engagements, AI and data strategy, technology
           transformation, scientific innovation and collaboration.
         </p>
+
       </div>
+
     </section>
 
+    <!-- CONTACT FORM -->
+
     <section class="form-card">
+
       <h2>Send an Enquiry</h2>
 
       <p class="form-note">
@@ -391,23 +486,29 @@
       <form id="contactForm">
 
         <label for="name">Full Name *</label>
+
         <input type="text" id="name" name="name"
                placeholder="Your name" required>
 
         <label for="company">Company / Organisation</label>
+
         <input type="text" id="company" name="company"
                placeholder="Your organisation">
 
         <label for="email">Business Email *</label>
+
         <input type="email" id="email" name="email"
                placeholder="name@company.com" required>
 
         <label for="phone">Phone Number</label>
+
         <input type="tel" id="phone" name="phone"
                placeholder="Your contact number">
 
         <label for="interest">Area of Interest *</label>
+
         <select id="interest" name="interest" required>
+
           <option value="">Select an area</option>
           <option>AI & Generative AI</option>
           <option>Data Science & Advanced Analytics</option>
@@ -418,9 +519,11 @@
           <option>Digital Transformation & Consulting</option>
           <option>Strategic Partnership</option>
           <option>Other</option>
+
         </select>
 
         <label for="message">How Can We Help? *</label>
+
         <textarea id="message" name="message"
                   placeholder="Tell us briefly about your requirements..."
                   required></textarea>
@@ -433,68 +536,104 @@
           Prefer to email directly?
           <a href="mailto:ashfaqmir@gmail.com">Contact us here</a>.
         </p>
+
       </form>
+
     </section>
 
   </div>
+
 </main>
 
+<!-- WHY US SECTION -->
+
 <section class="why-us">
+
   <h2>Why Connect With VAAKH Technologies?</h2>
 
   <div class="benefits">
+
     <div class="benefit">
+
       <h3>Scientific & Technical Expertise</h3>
+
       <p>
         Combining data science, AI, engineering and domain knowledge
         to address complex business and scientific challenges.
       </p>
+
     </div>
 
     <div class="benefit">
+
       <h3>Industry Understanding</h3>
+
       <p>
         Experience across pharmaceuticals, life sciences,
         diagnostics, healthcare and enterprise technology.
       </p>
+
     </div>
 
     <div class="benefit">
+
       <h3>Outcome-Oriented Consulting</h3>
+
       <p>
         Focused on practical solutions, measurable impact,
         sustainable transformation and long-term value.
       </p>
+
     </div>
+
   </div>
+
 </section>
 
+<!-- CALL TO ACTION -->
+
 <section class="cta">
+
   <h2>Let's Create Something Meaningful</h2>
+
   <p>
     Start a conversation about your next AI, data or digital
     transformation opportunity.
   </p>
+
   <a href="mailto:ashfaqmir@gmail.com">
     Email VAAKH Technologies
   </a>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
   <p>© 2026 VAAKH Technologies. All rights reserved.</p>
+
   <p>Munich, Germany | Connecting Expertise with Innovation</p>
+
   <p>
     <a href="https://www.linkedin.com/in/ashfaq-mir-ph-d-4530057/"
        target="_blank" rel="noopener noreferrer">
       LinkedIn
     </a>
+
     &nbsp; | &nbsp;
+
     <a href="mailto:ashfaqmir@gmail.com">Email</a>
   </p>
+
 </footer>
 
+<!-- CONTACT FORM EMAIL SCRIPT -->
+
 <script>
+
   document.getElementById("contactForm").addEventListener("submit", function(event) {
+
     event.preventDefault();
 
     if (!this.reportValidity()) {
@@ -524,8 +663,11 @@
       "&body=" + encodeURIComponent(body);
 
     window.location.href = mailtoLink;
+
   });
+
 </script>
 
 </body>
 </html>
+```
