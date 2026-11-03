@@ -188,26 +188,28 @@ html, body {
   max-width: 680px;
 }
 
-/* FOUNDER PHOTO */
+/* FOUNDER PHOTO - CIRCULAR */
 
 #vaakh-site .founder-photo {
-  width: 100%;
-  max-width: 390px;
+  width: 340px;
+  height: 340px;
+  max-width: 100%;
   margin: 0 auto;
+  border-radius: 50%;
   overflow: hidden;
-  border-radius: 20px;
+  border: 7px solid #F7F1FC;
+  box-shadow: 0 12px 35px rgba(81, 51, 111, .22);
   background: #F7F1FC;
-  border: 5px solid #F7F1FC;
-  box-shadow: 0 12px 35px rgba(81, 51, 111, .18);
+  flex-shrink: 0;
 }
 
 #vaakh-site .founder-photo img {
   display: block;
   width: 100%;
-  height: 460px;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
-  border-radius: 14px;
+  border-radius: 50%;
 }
 
 /* INTRODUCTION */
@@ -469,11 +471,8 @@ html, body {
   }
 
   #vaakh-site .founder-photo {
-    max-width: 350px;
-  }
-
-  #vaakh-site .founder-photo img {
-    height: 420px;
+    width: 310px;
+    height: 310px;
   }
 
   #vaakh-site .stats {
@@ -510,11 +509,8 @@ html, body {
   }
 
   #vaakh-site .founder-photo {
-    max-width: 310px;
-  }
-
-  #vaakh-site .founder-photo img {
-    height: 380px;
+    width: 270px;
+    height: 270px;
   }
 
   #vaakh-site .timeline,
@@ -605,16 +601,14 @@ html, body {
   </div>
 
   <!-- FOUNDER PHOTOGRAPH -->
-  <!-- Image file: Ashfaq-modified.png in the repository root -->
 
-<div class="founder-photo">
-  <img
-    src="https://ashfaqmir300.github.io/vaakh-technologies/Ashfaq-modified.png"
-    alt="Dr. Ashfaq Mir, Founder of VAAKH Technologies"
-    loading="eager"
-    onerror="this.style.display='none'; this.parentElement.innerHTML='<p style=&quot;padding:30px;color:#51336F&quot;>Photo could not be loaded. Please check the image URL.</p>';">
-</div>
-  
+  <div class="founder-photo">
+    <img
+      src="./Ashfaq-modified.png"
+      alt="Dr. Ashfaq Mir, Founder of VAAKH Technologies"
+      loading="eager">
+  </div>
+
 </div>
 </header>
 
