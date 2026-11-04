@@ -174,7 +174,7 @@ We welcome conversations and potential collaborations involving:
 
 For professional enquiries, consulting opportunities and collaborations, please visit:
 
-**Website:** https://ashfaqmir300.github.io/vaakh-technologies/index.html
+**Website:** https://ashfaqmir300.github.io/Vaakh-AI/index.html
 
 ---
 
