@@ -7,9 +7,9 @@
 
 ---
 
-## About VAAKH AI
+## About Vaakh AI
 
-**VAAKH AI is a specialist artificial intelligence, data science and technology consulting initiative focused on helping organisations translate complex scientific and business challenges into intelligent, scalable solutions.**
+**Vaakh AI is a specialist artificial intelligence, data science and technology consulting initiative focused on helping organisations translate complex scientific and business challenges into intelligent, scalable solutions.**
 
 We bring together scientific expertise, enterprise technology, advanced analytics and strategic transformation leadership to help organisations navigate the evolving AI landscape.
 
@@ -135,7 +135,7 @@ Our strongest differentiation lies at the intersection of **scientific expertise
 
 ## Leadership & Experience
 
-VAAKH AI is founded on a multidisciplinary foundation combining scientific research, data science, enterprise consulting and technology transformation.
+Vaakh AI is founded on a multidisciplinary foundation combining scientific research, data science, enterprise consulting and technology transformation.
 
 The founder's professional background includes:
 
@@ -178,10 +178,10 @@ For professional enquiries, consulting opportunities and collaborations, please 
 
 ---
 
-## VAAKH AI
+## Vaakh AI
 
 **Scientific AI. Enterprise Intelligence. Transformation at Scale.**
 
 *Think Scientifically. Engineer Intelligently. Transform Responsibly.*
 
-© VAAKH AI. All rights reserved.
+© Vaakh AI. All rights reserved.
