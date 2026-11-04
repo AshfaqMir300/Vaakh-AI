@@ -1,4 +1,4 @@
-# vaakh-AI
+# Vaakh-AI
 ### Scientific AI. Enterprise Intelligence. Transformation at Scale.
 
 **Turning scientific knowledge, complex data and emerging technologies into measurable business value.**
