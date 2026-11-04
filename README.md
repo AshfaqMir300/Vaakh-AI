@@ -3,7 +3,7 @@
 
 **Turning scientific knowledge, complex data and emerging technologies into measurable business value.**
 
-[Website](https://ashfaqmir300.github.io/vaakh-technologies/index.html) · AI Consulting · Data Science · Life Sciences · Enterprise Transformation
+[Website](https://ashfaqmir300.github.io/Vaakh-AI/index.html) · AI Consulting · Data Science · Life Sciences · Enterprise Transformation
 
 ---
 
